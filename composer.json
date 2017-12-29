@@ -31,7 +31,11 @@
     "php": ">= 7.0",
     "wame/HomepageModule": ">=0.0.1",
     "wame/AdminModule": ">=0.0.1",
-    "wame/UserModule": ">=0.0.1"
+    "wame/UserModule": ">=0.0.1",
+    "wame/ArticleModule": ">=0.0.1",
+    "wame/CategoryModule": ">=0.0.1",
+    "wame/TextblockModule": ">=0.0.1",
+    "wame/ArticleCategoryPlugin": ">=0.0.1"
   },
   "require-dev": {
     "nette/tester": "dev-master"
