@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="{$lang}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {position head}
+
+    <title>{ifset #title}{include title|striptags} | {/ifset}CMS WAME Admin</title>
+
+    {block head}
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic">
+
+        {control css}
+    {/block}
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<header class="header">
+    <div n:foreach="$flashes as $flash" n:class="'alert alert-dismissible fade in alert-'.$flash->type" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        {$flash->message}
+    </div>
+
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="{$basePath}/images/wame_logo.png">
+                </a>
+            </div>
+        </div>
+    </nav>
+    {position coreLayoutHeader}
+</header>
+
+{ifset #content}
+    <div> {include #content} </div>
+{/ifset}
+
+<footer class="footer">
+    {position coreLayoutFooter}
+</footer>
+
+<script>
+    var id = {$id};
+    var WAME = {};
+    WAME.lang = {$lang};
+</script>
+{block scripts}
+    {control js}
+{/block}
+</body>
+</html>
