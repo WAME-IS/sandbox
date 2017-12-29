@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5f224bcca1b18f27ee6d560671244394",
-    "content-hash": "e8dc64852029fe125e596cde4e0aa248",
+    "hash": "d4f9296d737e179807b2fc5933830763",
+    "content-hash": "e86fc0efc9877cdee1ccd063a68ba378",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -4283,8 +4283,14 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/adminmodule.git",
-                "reference": "da90805cc2d1f6ed901588a806365b4a7c1c7a3c"
+                "url": "https://github.com/WAME-IS/AdminModule.git",
+                "reference": "9f6d03530a7e6c8cbd174aebe89d365c3cc8cafb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/AdminModule/zipball/9f6d03530a7e6c8cbd174aebe89d365c3cc8cafb",
+                "reference": "9f6d03530a7e6c8cbd174aebe89d365c3cc8cafb",
+                "shasum": ""
             },
             "require": {
                 "leafo/scssphp": "0.6.*",
@@ -4307,15 +4313,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-29 07:45:45"
+            "support": {
+                "source": "https://github.com/WAME-IS/AdminModule/tree/master",
+                "issues": "https://github.com/WAME-IS/AdminModule/issues"
+            },
+            "time": "2017-12-29 14:36:37"
         },
         {
             "name": "wame/AutocompleteFormControl",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/autocompleteformcontrol.git",
-                "reference": "4f3e1b31e9fd40e16d17faa695a2ec7b3bf8e5b8"
+                "url": "https://github.com/WAME-IS/AutocompleteFormControl.git",
+                "reference": "7954187a48a12119ad820641f28b1ba5a7d2172c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/AutocompleteFormControl/zipball/7954187a48a12119ad820641f28b1ba5a7d2172c",
+                "reference": "7954187a48a12119ad820641f28b1ba5a7d2172c",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">=0.0.1",
@@ -4335,15 +4351,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-11-23 11:12:08"
+            "support": {
+                "source": "https://github.com/WAME-IS/AutocompleteFormControl/tree/master",
+                "issues": "https://github.com/WAME-IS/AutocompleteFormControl/issues"
+            },
+            "time": "2017-12-29 14:36:31"
         },
         {
             "name": "wame/ChameleonComponents",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/chameleoncomponents.git",
-                "reference": "19261aac98eb9ada54c5e3fd58f24b6fd4fec7a1"
+                "url": "https://github.com/WAME-IS/ChameleonComponents.git",
+                "reference": "16a51978f69aa3c7a9fc22b462acaa572ec9ff05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/ChameleonComponents/zipball/16a51978f69aa3c7a9fc22b462acaa572ec9ff05",
+                "reference": "16a51978f69aa3c7a9fc22b462acaa572ec9ff05",
+                "shasum": ""
             },
             "require": {
                 "wame/componentmodule": ">=0.0.1",
@@ -4363,15 +4389,25 @@
             ],
             "description": "Powerful tool for making components that can adapt to its surroundings like chameleon.",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-11-09 07:39:09"
+            "support": {
+                "source": "https://github.com/WAME-IS/ChameleonComponents/tree/master",
+                "issues": "https://github.com/WAME-IS/ChameleonComponents/issues"
+            },
+            "time": "2017-12-29 14:36:33"
         },
         {
             "name": "wame/ChameleonComponentsDoctrine",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/chameleoncomponentsdoctrine.git",
-                "reference": "35cab1a4db8ab4bf5e78c7f09de7a838ab588f08"
+                "url": "https://github.com/WAME-IS/ChameleonComponentsDoctrine.git",
+                "reference": "3b5d120aaaf6a5bf5797b8e7d2ec99e4f04547dc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/ChameleonComponentsDoctrine/zipball/3b5d120aaaf6a5bf5797b8e7d2ec99e4f04547dc",
+                "reference": "3b5d120aaaf6a5bf5797b8e7d2ec99e4f04547dc",
+                "shasum": ""
             },
             "require": {
                 "wame/chameleoncomponents": "*",
@@ -4391,15 +4427,25 @@
             ],
             "description": "ChameleonComponentsDoctrine",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-06-20 12:49:57"
+            "support": {
+                "source": "https://github.com/WAME-IS/ChameleonComponentsDoctrine/tree/master",
+                "issues": "https://github.com/WAME-IS/ChameleonComponentsDoctrine/issues"
+            },
+            "time": "2017-12-29 14:36:31"
         },
         {
             "name": "wame/ChameleonComponentsListControl",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/chameleoncomponentslistcontrol.git",
-                "reference": "c95d54181a63fb9bdc81ffbef053e3218284142d"
+                "url": "https://github.com/WAME-IS/ChameleonComponentsListControl.git",
+                "reference": "4082f15aed806eba4a44e411dbc5500b106f0924"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/ChameleonComponentsListControl/zipball/4082f15aed806eba4a44e411dbc5500b106f0924",
+                "reference": "4082f15aed806eba4a44e411dbc5500b106f0924",
+                "shasum": ""
             },
             "require": {
                 "wame/chameleoncomponents": ">=0.0.1",
@@ -4420,15 +4466,25 @@
             ],
             "description": "implementation of ListControl for ChameleonComponents",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-08-18 07:01:41"
+            "support": {
+                "source": "https://github.com/WAME-IS/ChameleonComponentsListControl/tree/master",
+                "issues": "https://github.com/WAME-IS/ChameleonComponentsListControl/issues"
+            },
+            "time": "2017-12-29 14:36:30"
         },
         {
             "name": "wame/ComponentModule",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/componentmodule.git",
-                "reference": "49674f65206b6c12523579e4afc022ef450f068b"
+                "url": "https://github.com/WAME-IS/ComponentModule.git",
+                "reference": "ccabd58cfce7c281d4a792729c39c15daf233a37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/ComponentModule/zipball/ccabd58cfce7c281d4a792729c39c15daf233a37",
+                "reference": "ccabd58cfce7c281d4a792729c39c15daf233a37",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">=0.0.1",
@@ -4448,15 +4504,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-29 10:18:05"
+            "support": {
+                "source": "https://github.com/WAME-IS/ComponentModule/tree/master",
+                "issues": "https://github.com/WAME-IS/ComponentModule/issues"
+            },
+            "time": "2017-12-29 14:36:35"
         },
         {
             "name": "wame/Core",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/core.git",
-                "reference": "858ced65a165702a05ddf8f75344c9e8b470d853"
+                "url": "https://github.com/WAME-IS/Core.git",
+                "reference": "36c903dc83980739624a9d780d20bd51268e46f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/Core/zipball/36c903dc83980739624a9d780d20bd51268e46f7",
+                "reference": "36c903dc83980739624a9d780d20bd51268e46f7",
+                "shasum": ""
             },
             "require": {
                 "beberlei/doctrineextensions": "^1.0",
@@ -4511,15 +4577,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-29 11:30:42"
+            "support": {
+                "source": "https://github.com/WAME-IS/Core/tree/master",
+                "issues": "https://github.com/WAME-IS/Core/issues"
+            },
+            "time": "2017-12-29 14:36:38"
         },
         {
             "name": "wame/CurrencyModule",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/currencymodule.git",
-                "reference": "bf5807c06129e51e9f7838200de71fc3f6be96b5"
+                "url": "https://github.com/WAME-IS/CurrencyModule.git",
+                "reference": "c568f31efbe544840d71a81f7953172e89282474"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/CurrencyModule/zipball/c568f31efbe544840d71a81f7953172e89282474",
+                "reference": "c568f31efbe544840d71a81f7953172e89282474",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">=0.0.1",
@@ -4539,15 +4615,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-29 08:28:40"
+            "support": {
+                "source": "https://github.com/WAME-IS/CurrencyModule/tree/master",
+                "issues": "https://github.com/WAME-IS/CurrencyModule/issues"
+            },
+            "time": "2017-12-29 14:36:35"
         },
         {
             "name": "wame/DataGridControl",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/datagridcontrol.git",
-                "reference": "5bfcbeb57f3c4ec6524c751c54991f8cf17a5676"
+                "url": "https://github.com/WAME-IS/DataGridControl.git",
+                "reference": "42fc4ad30f9b5b46800314dc7860d789edd1c558"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/DataGridControl/zipball/42fc4ad30f9b5b46800314dc7860d789edd1c558",
+                "reference": "42fc4ad30f9b5b46800314dc7860d789edd1c558",
+                "shasum": ""
             },
             "require": {
                 "ublaboo/datagrid": "v5.4.5",
@@ -4567,15 +4653,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-18 07:01:02"
+            "support": {
+                "source": "https://github.com/WAME-IS/DataGridControl/tree/master",
+                "issues": "https://github.com/WAME-IS/DataGridControl/issues"
+            },
+            "time": "2017-12-29 14:36:35"
         },
         {
             "name": "wame/DynamicObject",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/dynamicobject.git",
-                "reference": "ffc94cc21b3deae127da03f97caa8a98e50d93fd"
+                "url": "https://github.com/WAME-IS/DynamicObject.git",
+                "reference": "5cf97fc5f447466a5534bf935f4248021af821cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/DynamicObject/zipball/5cf97fc5f447466a5534bf935f4248021af821cb",
+                "reference": "5cf97fc5f447466a5534bf935f4248021af821cb",
+                "shasum": ""
             },
             "require": {
                 "kdyby/forms-replicator": "1.2.x-dev",
@@ -4596,15 +4692,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-18 07:01:01"
+            "support": {
+                "source": "https://github.com/WAME-IS/DynamicObject/tree/master",
+                "issues": "https://github.com/WAME-IS/DynamicObject/issues"
+            },
+            "time": "2017-12-29 14:36:36"
         },
         {
             "name": "wame/GeneralSettingsPlugin",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/generalsettingsplugin.git",
-                "reference": "e04f0a710d5ab2ecde1f221b9776b1af082fa2d6"
+                "url": "https://github.com/WAME-IS/GeneralSettingsPlugin.git",
+                "reference": "184ce1b895faa0fc193f5830253e86914f8a9d32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/GeneralSettingsPlugin/zipball/184ce1b895faa0fc193f5830253e86914f8a9d32",
+                "reference": "184ce1b895faa0fc193f5830253e86914f8a9d32",
+                "shasum": ""
             },
             "require": {
                 "wame/settingsmodule": ">=0.0.1"
@@ -4623,15 +4729,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-07-19 07:30:59"
+            "support": {
+                "source": "https://github.com/WAME-IS/GeneralSettingsPlugin/tree/master",
+                "issues": "https://github.com/WAME-IS/GeneralSettingsPlugin/issues"
+            },
+            "time": "2017-12-29 14:36:32"
         },
         {
             "name": "wame/Geolocate",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/geolocate.git",
-                "reference": "028d4d6ce178462d31cd0bc22a276123c25f0811"
+                "url": "https://github.com/WAME-IS/Geolocate.git",
+                "reference": "0defa07cb4d71647cbad065312209b03c64944b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/Geolocate/zipball/0defa07cb4d71647cbad065312209b03c64944b2",
+                "reference": "0defa07cb4d71647cbad065312209b03c64944b2",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">=0.0.1",
@@ -4651,15 +4767,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-11-24 12:25:20"
+            "support": {
+                "source": "https://github.com/WAME-IS/Geolocate/tree/master",
+                "issues": "https://github.com/WAME-IS/Geolocate/issues"
+            },
+            "time": "2017-12-29 14:36:37"
         },
         {
             "name": "wame/HeadControl",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/headcontrol.git",
-                "reference": "e963b2e2939d632dffedf55ba0655c33ff4bf13f"
+                "url": "https://github.com/WAME-IS/HeadControl.git",
+                "reference": "15b3f599911e6dea04c1bdd1ad115ab2db974a6d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/HeadControl/zipball/15b3f599911e6dea04c1bdd1ad115ab2db974a6d",
+                "reference": "15b3f599911e6dea04c1bdd1ad115ab2db974a6d",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">=0.0.1"
@@ -4678,15 +4804,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-06-21 14:58:32"
+            "support": {
+                "source": "https://github.com/WAME-IS/HeadControl/tree/master",
+                "issues": "https://github.com/WAME-IS/HeadControl/issues"
+            },
+            "time": "2017-12-29 14:36:37"
         },
         {
             "name": "wame/HomepageModule",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/homepagemodule.git",
-                "reference": "7d56a9bc955895704643827dcbfbaf1d27b03865"
+                "url": "https://github.com/WAME-IS/HomepageModule.git",
+                "reference": "aedb71fe80bd7b76eee06e1ddb89fbcb0f8191be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/HomepageModule/zipball/aedb71fe80bd7b76eee06e1ddb89fbcb0f8191be",
+                "reference": "aedb71fe80bd7b76eee06e1ddb89fbcb0f8191be",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">= 0.0.1",
@@ -4706,15 +4842,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-06-22 07:48:33"
+            "support": {
+                "source": "https://github.com/WAME-IS/HomepageModule/tree/master",
+                "issues": "https://github.com/WAME-IS/HomepageModule/issues"
+            },
+            "time": "2017-12-29 14:36:35"
         },
         {
             "name": "wame/LanguageModule",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/languagemodule.git",
-                "reference": "ff81622898c0d3719201f41060e275d0b51f3f0c"
+                "url": "https://github.com/WAME-IS/LanguageModule.git",
+                "reference": "389f92f6faa6c56ea471231203c8fddb5b47348d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/LanguageModule/zipball/389f92f6faa6c56ea471231203c8fddb5b47348d",
+                "reference": "389f92f6faa6c56ea471231203c8fddb5b47348d",
+                "shasum": ""
             },
             "require": {
                 "gettext/gettext": "^v4.1",
@@ -4734,15 +4880,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-29 12:08:46"
+            "support": {
+                "source": "https://github.com/WAME-IS/LanguageModule/tree/master",
+                "issues": "https://github.com/WAME-IS/LanguageModule/issues"
+            },
+            "time": "2017-12-29 14:36:35"
         },
         {
             "name": "wame/ListControl",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/listcontrol.git",
-                "reference": "b440aec88f606f6823a2fee513af63d66919da91"
+                "url": "https://github.com/WAME-IS/ListControl.git",
+                "reference": "0735f2e350213f3935414f4d76c674a0d548627b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/ListControl/zipball/0735f2e350213f3935414f4d76c674a0d548627b",
+                "reference": "0735f2e350213f3935414f4d76c674a0d548627b",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">=0.0.1"
@@ -4761,15 +4917,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-07-20 14:30:04"
+            "support": {
+                "source": "https://github.com/WAME-IS/ListControl/tree/master",
+                "issues": "https://github.com/WAME-IS/ListControl/issues"
+            },
+            "time": "2017-12-29 14:36:37"
         },
         {
             "name": "wame/LocationModule",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/locationmodule.git",
-                "reference": "73b585ff1668acf437e2c514fd6cf75dd30987d1"
+                "url": "https://github.com/WAME-IS/LocationModule.git",
+                "reference": "06c6e29e9317c596de24e8b77b110289d2f6aa0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/LocationModule/zipball/06c6e29e9317c596de24e8b77b110289d2f6aa0e",
+                "reference": "06c6e29e9317c596de24e8b77b110289d2f6aa0e",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">=0.0.1",
@@ -4790,15 +4956,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-29 09:35:57"
+            "support": {
+                "source": "https://github.com/WAME-IS/LocationModule/tree/master",
+                "issues": "https://github.com/WAME-IS/LocationModule/issues"
+            },
+            "time": "2017-12-29 14:36:35"
         },
         {
             "name": "wame/MenuModule",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/menumodule.git",
-                "reference": "d78c28fe86a281000397f196bf97e2eaea5d6227"
+                "url": "https://github.com/WAME-IS/MenuModule.git",
+                "reference": "52e679cd236ac0ebb6468be45607441c5e09d719"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/MenuModule/zipball/52e679cd236ac0ebb6468be45607441c5e09d719",
+                "reference": "52e679cd236ac0ebb6468be45607441c5e09d719",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">=0.0.1",
@@ -4818,15 +4994,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-14 13:39:46"
+            "support": {
+                "source": "https://github.com/WAME-IS/MenuModule/tree/master",
+                "issues": "https://github.com/WAME-IS/MenuModule/issues"
+            },
+            "time": "2017-12-29 14:36:37"
         },
         {
             "name": "wame/PermissionModule",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/permissionmodule.git",
-                "reference": "1c4e546f19e8a5d7ae91d128e51fa1a73eb87039"
+                "url": "https://github.com/WAME-IS/PermissionModule.git",
+                "reference": "8e625f442be66581398dfd2e4ba37b6ee9a27c0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/PermissionModule/zipball/8e625f442be66581398dfd2e4ba37b6ee9a27c0a",
+                "reference": "8e625f442be66581398dfd2e4ba37b6ee9a27c0a",
+                "shasum": ""
             },
             "require": {
                 "wame/usermodule": ">=0.0.1"
@@ -4845,15 +5031,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-29 12:08:46"
+            "support": {
+                "source": "https://github.com/WAME-IS/PermissionModule/tree/master",
+                "issues": "https://github.com/WAME-IS/PermissionModule/issues"
+            },
+            "time": "2017-12-29 14:36:34"
         },
         {
             "name": "wame/RestApiModule",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/restapimodule.git",
-                "reference": "485b34a29aff4ae0230ff5fbac117f977f74a32b"
+                "url": "https://github.com/WAME-IS/RestApiModule.git",
+                "reference": "e9ed492b1956285e31a349dd302a4799f13a1430"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/RestApiModule/zipball/e9ed492b1956285e31a349dd302a4799f13a1430",
+                "reference": "e9ed492b1956285e31a349dd302a4799f13a1430",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">=0.0.1"
@@ -4876,15 +5072,25 @@
             ],
             "description": "CMS WAME admin Core",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-10-16 07:55:17"
+            "support": {
+                "source": "https://github.com/WAME-IS/RestApiModule/tree/master",
+                "issues": "https://github.com/WAME-IS/RestApiModule/issues"
+            },
+            "time": "2017-12-29 14:36:36"
         },
         {
             "name": "wame/RouterModule",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/routermodule.git",
-                "reference": "508f463ee586becc60bc4f7eca687f969ac60b5e"
+                "url": "https://github.com/WAME-IS/RouterModule.git",
+                "reference": "f8e325a17656eaa121b08765704ac0cd650dca21"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/RouterModule/zipball/f8e325a17656eaa121b08765704ac0cd650dca21",
+                "reference": "f8e325a17656eaa121b08765704ac0cd650dca21",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">=0.0.1"
@@ -4903,15 +5109,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-29 10:18:05"
+            "support": {
+                "source": "https://github.com/WAME-IS/RouterModule/tree/master",
+                "issues": "https://github.com/WAME-IS/RouterModule/issues"
+            },
+            "time": "2017-12-29 14:36:36"
         },
         {
             "name": "wame/SettingsModule",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/settingsmodule.git",
-                "reference": "7cafb8b28b8df20715f1b584a2b52d22a6227214"
+                "url": "https://github.com/WAME-IS/SettingsModule.git",
+                "reference": "42763f1d83f59f782ce19077f8d9b39be1ed3081"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/SettingsModule/zipball/42763f1d83f59f782ce19077f8d9b39be1ed3081",
+                "reference": "42763f1d83f59f782ce19077f8d9b39be1ed3081",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">=0.0.1",
@@ -4931,15 +5147,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-07-19 07:30:59"
+            "support": {
+                "source": "https://github.com/WAME-IS/SettingsModule/tree/master",
+                "issues": "https://github.com/WAME-IS/SettingsModule/issues"
+            },
+            "time": "2017-12-29 14:36:35"
         },
         {
             "name": "wame/UserModule",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/usermodule.git",
-                "reference": "62404c74a1d91eba9bbe999eb8b659811587a2f0"
+                "url": "https://github.com/WAME-IS/UserModule.git",
+                "reference": "1b515012fdb95b6fc79cb14937dc2825f05c5e47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/UserModule/zipball/1b515012fdb95b6fc79cb14937dc2825f05c5e47",
+                "reference": "1b515012fdb95b6fc79cb14937dc2825f05c5e47",
+                "shasum": ""
             },
             "require": {
                 "majkl578/nette-identity-doctrine": "dev-fix/proxy",
@@ -4964,15 +5190,25 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-14 13:40:16"
+            "support": {
+                "source": "https://github.com/WAME-IS/UserModule/tree/master",
+                "issues": "https://github.com/WAME-IS/UserModule/issues"
+            },
+            "time": "2017-12-29 14:36:37"
         },
         {
             "name": "wame/Utils",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://wamesro@bitbucket.org/wame-web/utils.git",
-                "reference": "40af6531626416347746aa364350389fe5fc4eb2"
+                "url": "https://github.com/WAME-IS/Utils.git",
+                "reference": "fc47c1e1a1e049b697f3a437cdefbbff85b31f4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/Utils/zipball/fc47c1e1a1e049b697f3a437cdefbbff85b31f4a",
+                "reference": "fc47c1e1a1e049b697f3a437cdefbbff85b31f4a",
+                "shasum": ""
             },
             "require": {
                 "wame/core": ">=0.0.1"
@@ -4991,7 +5227,11 @@
             ],
             "description": "CMS WAME admin",
             "homepage": "http://wame.sk/cms-wame-admin",
-            "time": "2017-12-29 11:31:48"
+            "support": {
+                "source": "https://github.com/WAME-IS/Utils/tree/master",
+                "issues": "https://github.com/WAME-IS/Utils/issues"
+            },
+            "time": "2017-12-29 14:36:37"
         },
         {
             "name": "zendframework/zend-code",

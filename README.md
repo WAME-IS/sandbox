@@ -4,43 +4,47 @@
 
 ## Inštalácia
 
-1. Nainštalujeme si všetky závislosti
+1. Stiahnime si projekt
     ```
-    composer update
+    composer create-project wameis/sandbox:dev-master <project-name>
     ```
-2. Premažeme temp priečinok 
+2. Nainštalujeme si všetky závislosti
+    ```
+    composer install
+    ```
+3. Premažeme temp priečinok 
     ```
     composer clear
     ```
-3. Nainštalujeme NPM závislosti
+4. Nainštalujeme NPM závislosti
     ```
     npm install
     ```
-4. Stiahneme componenty cez Bower
+5. Stiahneme componenty cez Bower
     ```
     bower install
     ```
-5. Spustíme Gulp úlohy
+6. Spustíme Gulp úlohy
     ```
     gulp
     ```
-6. Vygenerujeme si schému databázy
+7. Vygenerujeme si schému databázy
     ```
     php web/index.php orm:schema-tool:create
     ```
-7. Vygenerujeme si defaultne routy
+8. Vygenerujeme si defaultne routy
     ```
     php web/index.php router:update-default-routes
     ```
-8. Prenesieme migrácie zo všetkých modulov do hlavnej zložky
+9. Prenesieme migrácie zo všetkých modulov do hlavnej zložky
     ```
     php web/index.php migrations:collect
     ```
-9. Spustíme migrácie
+10. Spustíme migrácie
     ```
     php web/index.php migrations:continue
     ```
-10. Vytvoríme defaultné pozície a componenty
+11. Vytvoríme defaultné pozície a componenty
     ```
     composer wame:component:update
     ```

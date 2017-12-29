@@ -1,5 +1,5 @@
 {
-  "name": "wame/sandbox",
+  "name": "wameis/sandbox",
   "description": "",
   "homepage": "https://wameis.org",
   "type": "project",
@@ -11,22 +11,11 @@
     }
   ],
   "repositories": [
-    {
-      "type": "composer",
-      "url": "http://packages.wame.sk/",
-      "options": {
-        "ssh2": {
-          "username": "composer",
-          "pubkey_file": ".ssh/id_rsa.pub",
-          "privkey_file": ".ssh/id_rsa"
-        }
-      }
-    },
+    { "type": "composer", "url": "https://packages.wameis.org" },
     { "type": "vcs", "url": "https://github.com/wamesro/forms" },
     { "type": "vcs", "url": "https://github.com/wamesro/gettext-latte" },
     { "type": "vcs", "url": "https://github.com/matej21/nette-identity-doctrine" }
   ],
-  "config": { "secure-http": false },
   "require": {
     "php": ">= 7.0",
     "wame/HomepageModule": ">=0.0.1",
