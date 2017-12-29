@@ -1,0 +1,9 @@
+.fa {
+    &:after {
+        @extend .material-icons;
+        font-family: 'Material Icons';
+    }
+    &.fa-times-circle:after { content: '\E5C9'; } // cancel
+    &.fa-refresh:after { content: '\E627'; } // sync
+    &.fa-exclamation-triangle:after { content: '\E002'; } // warning
+}

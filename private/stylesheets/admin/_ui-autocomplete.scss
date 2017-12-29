@@ -1,0 +1,40 @@
+.ui-autocomplete {
+    position: absolute;
+    z-index: 2000;
+    overflow: scroll;
+    top: 25px;
+    max-height: 350px;
+    background-color: $light-color;
+    @extend .z-depth-3;
+    
+    li {
+        padding: 10px 20px;
+        border-bottom: 1px solid $gray-color-light;
+        color: $secondary-color-dark;
+        
+        &:last-child { border: 0; }
+        
+        &:hover {
+            border-color: $primary-color;
+            background-color: $primary-color;
+            color: $light-color;
+            @extend .cursor-hand;
+        }
+    }
+}
+
+div.ui-autocomplete-input {
+    @extend input;
+    padding-top: 10px !important;
+    height: 2rem !important;
+    border-color: $light-color;
+    color: $dark-color;
+    
+    .autocomplete-remove {
+        &:before {
+            content: '\E5C9';
+            @extend .font-icon;
+            font-size: 16px;
+        }
+    }
+}

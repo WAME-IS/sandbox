@@ -1,0 +1,132 @@
+form {
+    .group {
+        &.form-group-transparent {
+            fieldset {
+                .form-group,
+                .input-field {
+                    .mce-tinymce { margin-top: -10px; }
+                }
+            }
+        }
+    }
+}
+
+.mce-tinymce {
+    @extend .z-depth-2;
+    
+    .mce-toolbar-grp {
+        margin-bottom: 15px;
+        @extend .z-depth-2;
+        
+        .mce-toolbar { 
+            padding: 8px 10px; 
+            border-top: 1px solid $gray-color-light;
+            
+            &:first-child { border-top: 0; }
+        }
+    }
+}
+
+.mce-panel {
+    border: 0 !important;
+    background-color: $light-color !important;
+}
+
+.mce-btn-group:not(:first-child) {
+    border-color: $gray-color-light !important;
+}
+
+.mce-btn {
+    border: 0 !important;
+    background-color: transparent !important;
+    text-shadow: none !important;
+    
+    i,
+    button {
+        color: $secondary-color-dark;
+    }
+    
+    &:hover,
+    &.mce-active {
+        i,
+        button {
+            color: $primary-color;
+        }
+    }
+}
+
+.mce-menu { @extend .z-depth-3; }
+
+.mce-menu-item:hover, 
+.mce-menu-item.mce-selected, 
+.mce-menu-item:focus {
+    background-color: $primary-color !important;
+}
+
+div.mce-edit-area { background: transparent !important; }
+
+
+// CODE PATH
+
+.mce-path {
+    font-size: 10px;
+    
+    .mce-divider,
+    .mce-path-item {
+        color: $gray-color;
+    }
+    
+    .mce-path-item {
+        &:hover { color: $secondary-color; }
+    }
+}
+
+// WORD COUNT
+
+.mce-wordcount {
+    font-size: 10px;
+    color: $gray-color !important;
+    margin-right: 10px !important;
+}
+
+
+// MODAL
+
+.mce-window {
+    min-width: 400px;
+    @extend .z-depth-3;
+    
+    .mce-window-head {
+        padding: 20px;
+        border: 0;
+        @extend .z-depth-2;
+        
+        .mce-title { @extend .text-headline; }
+        
+        .mce-close {
+            margin-top: 10px;
+            margin-right: 10px;  
+        }
+        
+        button { 
+            &:focus { background-color: transparent !important; }
+        }
+    }
+    
+    textarea { border: 0 !important; }
+}
+
+
+// POPOVER
+
+.mce-popover {  @extend .z-depth-3; }
+
+
+// FULLSCREEN
+
+.mce-fullscreen { 
+    z-index: 1000 !important; 
+    margin-top: 0 !important;
+}
+
+.mce-branding-powered-by { display: none !important; }

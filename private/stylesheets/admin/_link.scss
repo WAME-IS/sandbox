@@ -1,0 +1,80 @@
+a {
+    &:link, &:visited { color: $primary-color; }
+    &:hover, &:focus { color: $dark-color }
+    
+    &.link-light {
+        &:link, &:visited { color: $light-color; }
+    }
+    
+    &.link-dark {
+        &:link, &:visited { color: $dark-color; }
+    }
+    
+    &.link-gray {
+        &:link, &:visited { color: $gray-color; }
+    }
+    
+    &.link-gray-dark {
+        &:link, &:visited { color: $gray-color-dark; }
+    }
+    
+    &.link-primary {
+        &:link, &:visited { color: $primary-color; }
+    }
+    
+    &.link-secondary {
+        &:link, &:visited { color: $secondary-color; }
+    }
+    
+    &.link-success {
+        &:link, &:visited { color: $success-color; }
+    }
+    
+    &.link-danger {
+        &:link, &:visited { color: $danger-color; }
+    }
+    
+    &.link-warning {
+        &:link, &:visited { color: $warning-color; }
+    }
+    
+    &.link-info {
+        &:link, &:visited { color: $info-color; }
+    }
+    
+    
+    // HOVER OTHER COLOR
+    
+    &.link-hover-light {
+        &:hover, &:focus { color: $light-color; }
+    }
+    
+    &.link-hover-dark {
+        &:hover, &:focus { color: $dark-color; }
+    }
+    
+    &.link-hover-primary {
+        &:hover, &:focus { color: $primary-color; }
+    }
+    
+    &.link-hover-secondary {
+        &:hover, &:focus { color: $secondary-color; }
+    }
+    
+    &.link-hover-success {
+        &:hover, &:focus { color: $success-color; }
+    }
+    
+    &.link-hover-danger {
+        &:hover, &:focus { color: $danger-color; }
+    }
+    
+    &.link-hover-warning {
+        &:hover, &:focus { color: $warning-color; }
+    }
+    
+    &.link-hover-info {
+        &:hover, &:focus { color: $info-color; }
+    }
+
+}

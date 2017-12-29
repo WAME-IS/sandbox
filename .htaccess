@@ -1,0 +1,11 @@
+#AddType application/x-httpd-php5 .php52
+#AddType application/x-httpd-php .php4
+php_flag display_errors 0
+php_flag output_buffering 0
+#AddType application/x-httpd-php54 .php
+
+RewriteEngine on
+RewriteRule ^(.*)$ /web/$1
+<FilesMatch ".(flv|gif|jpg|jpeg|png|ico|swf)$">
+Header set Cache-Control "max-age=2592000"
+</FilesMatch>

@@ -1,0 +1,25 @@
+{**
+ * @param $row    Ublaboo\DataGrid\Row
+ * @param $status Ublaboo\DataGrid\Column\ColumnStatus
+ *}
+
+{var $active_option = $status->getCurrentOption($row)}
+
+<div class="dropdown">
+	{if $active_option}
+		<button class="dropdown-button btn {$active_option->getClass()} {$active_option->getClassSecondary()} btn-block" type="button" data-activates="dropdown-{$row->id}">
+			{if $active_option->getIcon()}<span class="{$icon_prefix}">{$active_option->getIcon()}</span> {/if}
+			{$active_option->getText()} <i n:if="$status->hasCaret()" class="arrow_drop_down"></i>
+		</button>
+	{else}
+		{$row->getValue($status->getColumn())}
+	{/if}
+	<ul id="dropdown-{$row->id}" class="dropdown-content z-depth-3">
+		<li n:foreach="$status->getOptions() as $option">
+			<a class="{$option->getClassInDropdown()}" n:href="changeStatus!, id => $row->getId(), key => $status->getKey(), value => $option->getValue()">
+				<span class="{$icon_prefix}">{$option->getIcon()}</span>
+                {$option->getText()}
+			</a>
+		</li>
+	</ul>
+</div>

@@ -1,0 +1,243 @@
+.modal-overlay { 
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    background-color: $secondary-color-dark; 
+    opacity: .85 !important;
+}
+
+.modal {
+    background-color: $light-color;
+    
+    .modal-header {
+        display: block;
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        padding: 20px 30px;
+        width: 100%;
+        background-color: $light-color;
+        @extend .z-depth-2;
+
+        h1 { 
+            @extend .text-headline; 
+            display: inline-block;
+            margin: 0;
+            
+            span {
+                @extend .font-semibold;
+                font-size: .9em;
+                text-transform: none;
+                letter-spacing: 1px;
+                white-space: nowrap;
+                color: $gray-color;
+                
+                &:before {
+                    content: '\E5CC';
+                    position: relative;
+                    top: 2px;
+                    margin-right: 5px;
+                    @extend .font-icon;
+                }
+            }
+        }
+
+        .modal-close {
+            color: $gray-color;
+
+            &:hover,
+            &:focus {
+                color: $dark-color;
+            }
+            
+            i { font-size: 1.8rem; }
+        }
+    }
+
+    .modal-content {
+        padding: 0;
+        margin-top: 76px;
+        height: calc(100% - 76px);
+        max-height: 100%;
+        width: 100%;
+        background-color: $light-color;
+        
+        .modal-content-inner {
+            padding: 24px;
+            
+            h1 { display: none; }
+
+            .row { margin: 0; }
+            
+            form {
+                margin: -24px;
+
+                .group {
+                    margin: 0;
+                    padding: 0;
+                    
+                    fieldset {
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding: 0;
+                        @extend .no-shadow;
+                        
+                        legend { 
+                            margin-bottom: 25px;
+                            color: $primary-color; 
+                        }
+                    }
+                }
+                
+                .form-group-transparent {
+                    &.submit-group { 
+                        padding: 20px 30px;
+                        border-top: 1px solid $gray-color-light; 
+                    }
+                }
+                
+                .form-group-empty { 
+                    fieldset { padding-top: 30px; }
+                }
+            }
+        }
+    }
+    
+    &.modal-fixed,
+    &.modal-fixed-header,
+    &.modal-fixed-footer {
+        height: 70%;
+        overflow-y: hidden;
+        
+        .modal-content {
+            position: relative;
+            overflow-y: auto;
+        }
+    }
+    
+    &.modal-sm { width: 30%; }
+    
+    &.modal-lg {
+        top: 5% !important;
+        width: 95%;
+        height: 90%;
+        max-height: 90%;
+    }
+    
+    .preloader {
+        padding: 50px 0;
+        height: 100%;
+        
+        .preloader-wrapper {
+            margin: 0 auto;
+            
+            .spinner-layer { border-color: $primary-color; }
+        }
+    }
+    
+    .modal-error {
+        padding: 100px;
+        height: 100%;
+        text-align: center;
+        
+        .valign {
+            margin: 0 auto;
+        
+            i {
+                display: block;
+                font-size: 4em;
+                color: $danger-color;
+            }
+            
+            strong {
+                display: block;
+                font-size: 2em;
+            }
+        }
+    }
+    
+    .overlay-block { margin: 0 -24px; }
+}
+
+.modal-transparent {
+    top: 0 !important;
+    padding: 0 15px 30px 15px;
+    max-height: 100%;
+    border-radius: 0;
+    background-color: transparent;
+    @extend .no-shadow;
+    
+    .modal-header {
+        background-color: transparent;
+        
+        a {
+            color: $light-color;
+            
+            &:hover,
+            &:focus {
+                color: $secondary-color-light;
+            }
+        }
+    }
+    
+    .modal-content {
+        margin-top: 45px;
+        height: 100%;
+        background-color: transparent;
+        
+        .group {
+            &.form-group-transparent {
+                .input-field,
+                .form-group {
+                    #{$input-types} {
+                        border-color: $light-color;
+                        color: $light-color;
+
+                        &:focus {
+                            border-color: $primary-color;
+                            color: $light-color;
+                            box-shadow: 0 1px 0 0 $primary-color;
+
+                            &:not([readonly]) {
+                                border-color: $primary-color;
+                                color: $light-color;
+                                box-shadow: 0 1px 0 0 $primary-color;
+
+                                + label { color: $primary-color; }
+                            }
+                        }
+                    }
+
+                    .select-wrapper {
+                        input {
+                            border-bottom: 1px solid $light-color !important;
+                        }
+                    }
+
+                    label { 
+                        color: $light-color; 
+
+                        &.active { color: $primary-color; }
+                    }
+                    
+                    .prefix {
+                        color: $light-color;
+                    }
+                }
+            }
+        }
+    }
+    
+    &.modal-lg {
+        top: 0 !important;
+        padding: 0 30px;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+    }
+}
+
+#materialbox-overlay {
+    background-color: $secondary-color-dark;
+    opacity: .85 !important;
+}

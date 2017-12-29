@@ -1,0 +1,47 @@
+parameters:
+    # SocialModule - cookie name
+    domainSocialLogin: ''
+
+    database:
+        driver: 'pdo_mysql'
+        host: ''
+        unix_socket: ''
+        dbname: ''
+        user: ''
+        password: ''
+        port: ''
+
+    facebook:
+        appId: ''
+        appSecret: ''
+        callbackURL: ''
+    google:
+        clientId: ''
+        clientSecret: ''
+        callbackURL: ''
+    twitter:
+        consumerKey: ''
+        consumerSecret: ''
+        callbackURL: ''
+
+    geolocateAutocompleteFormControl:
+        googleMapsApiKey: ''
+
+gettextLatteExtension:
+    langs:
+        en: en_US.utf8
+di:
+    debugger: false
+
+application:
+    catchExceptions: false
+
+doctrine:
+    logging: off
+
+events:
+    debugger:
+        dispatchTree: off
+        dispatchLog: off
+        events: off
+        listeners: off

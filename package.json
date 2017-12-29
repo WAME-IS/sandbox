@@ -1,0 +1,26 @@
+{
+  "name": "wame-is-sandbox",
+  "version": "0.0.1",
+  "description": "WAME IS",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.1.0",
+    "gulp-rewrite-css": "0.0.9"
+  },
+  "devDependencies": {
+    "gulp-bower-normalize": "^1.0.6",
+    "gulp-customize-bootstrap": "0.0.6",
+    "gulp-main-bower-files": "^1.5.1",
+    "gulp-rewrite-css": "0.0.9",
+    "gulp-sass": "^2.3.2",
+    "main-bower-files": "^2.13.1",
+    "preen": "^1.2.0",
+    "through2": "^0.6.5"
+  },
+  "author": "http://wame.sk",
+  "license": "MIT"
+}

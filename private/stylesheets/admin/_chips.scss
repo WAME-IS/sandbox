@@ -1,0 +1,14 @@
+.chip {
+    border-radius: 0;
+    border: 2px solid $gray-color;
+    background-color: transparent;
+    color: $dark-color;
+    
+    &.chip-light { color: $light-color; }
+    
+    &:hover {
+        border-color: $primary-color;
+        color: $primary-color;
+        @extend .cursor-hand;
+    }
+}

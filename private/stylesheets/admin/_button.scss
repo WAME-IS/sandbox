@@ -1,0 +1,171 @@
+.btn {
+    @extend .font-bold;
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: $dark-color;
+    @extend .z-depth-0;
+    
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        color: $secondary-color;
+        @extend .z-depth-0;
+    }
+    
+    &.btn-link {
+        padding: 0 15px;
+        @extend .font-semibold;
+        text-transform: none;
+        color: $gray-color-dark;
+        
+        &:hover,
+        &:focus {
+            color: $dark-color;
+        }
+        
+        .material-icons { color: $primary-color; }
+    }
+    &.btn-default {
+        border-color: $gray-color;
+        background-color: transparent;
+        color: $dark-color;
+        
+        &:hover,
+        &:focus {
+            border-color: $gray-color;
+            background-color: $gray-color;
+            color: $light-color;
+        }
+    }
+    &.btn-success {
+        border-color: $success-color;
+        background-color: $success-color;
+        color: $light-color;
+        
+        &:hover,
+        &:focus {
+            border-color: $success-color;
+            background-color: transparent;
+            color: $success-color;
+        }
+    }
+    &.btn-danger {
+        border-color: $danger-color;
+        background-color: $danger-color;
+        color: $light-color;
+        
+        &:hover,
+        &:focus {
+            border-color: $danger-color;
+            background-color: transparent;
+            color: $danger-color;
+        }
+    }
+    &.btn-warning {
+        border-color: $warning-color;
+        background-color: $warning-color;
+        color: $light-color;
+        
+        &:hover,
+        &:focus {
+            border-color: $warning-color;
+            background-color: transparent;
+            color: $warning-color;
+        }
+    }
+    &.btn-info {
+        border-color: $info-color;
+        background-color: $info-color;
+        color: $light-color;
+        
+        &:hover,
+        &:focus {
+            border-color: $info-color;
+            background-color: transparent;
+            color: $info-color;
+        }
+    }
+    &.btn-primary {
+        border-color: $primary-color;
+        background-color: $primary-color;
+        color: $light-color;
+        
+        &:hover,
+        &:focus {
+            border-color: $primary-color;
+            background-color: transparent;
+            color: $dark-color;
+        }
+    }
+    &.btn-secondary {
+        border-color: $secondary-color;
+        background-color: $secondary-color;
+        color: $light-color;
+        
+        &:hover,
+        &:focus {
+            border-color: $secondary-color;
+            background-color: transparent;
+            color: $dark-color;
+        }
+    }
+    
+    &.btn-hover-danger {
+        &:hover,
+        &:focus {
+            border-color: $danger-color;
+            background-color: $danger-color;
+            color: $light-color;
+        }
+    }
+    
+    &.btn-icon {
+        padding: 0 10px;
+        border: 0;
+        color: $gray-color-dark;
+        
+        &:hover,
+        &:focus {
+            border-color: transparent;
+            background-color: transparent;
+            color: $dark-color;
+            
+            &.btn-hover-success { color: $success-color; }
+            &.btn-hover-danger { color: $danger-color; }
+            &.btn-hover-warning { color: $warning-color; }
+            &.btn-hover-info { color: $info-color; }
+            &.btn-hover-primary { color: $primary-color; }
+            &.btn-hover-secondary { color: $secondary-color; }
+        }
+    }
+    
+    &.btn-floating { border: 0; }
+    
+    &.btn-xs,
+    &.btn-small {
+        padding: 0 1rem;
+        height: 24px;
+        line-height: 24px;
+        @extend .font-regular;
+        font-size: 12px;
+        
+        &.btn-icon { padding: 0 .5rem; }
+    }
+    
+    &.btn-lg { @extend .btn-large; }
+    
+    &.btn-block {
+        display: block;
+        width: 100%;
+        height: inherit;
+        line-height: inherit;
+    }
+    
+    &.disabled,
+    &[disabled] {
+        border-color: transparent !important;
+        background-color: $gray-color-light;
+        color: $gray-color-dark;
+    }
+
+}

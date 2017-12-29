@@ -1,0 +1,89 @@
+.font-light {
+    @extend .font-family;
+    font-weight: 300;
+}
+
+.font-regular {
+    @extend .font-family;
+    font-weight: 400;
+}
+
+.font-semibold {
+    @extend .font-family;
+    font-weight: 500;
+}
+
+.font-bold {
+    @extend .font-family;
+    font-weight: 700;
+}
+
+
+.text-headline {
+    @extend .font-bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: $secondary-color;
+}
+
+.text-normal {
+    @extend .font-semibold;
+    font-size: 16px;
+    color: $dark-color;
+}
+
+.text-muted {
+    @extend .font-semibold;
+    font-size: 15px;
+    color: $gray-color;
+}
+
+.text-link {
+    @extend .font-semibold;
+    font-size: 15px;
+    text-decoration: underline;
+    color: $primary-color;
+}
+
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+
+.pull-left { float: left; }
+.pull-right { float: right; }
+
+
+.text-nowrap { white-space: nowrap; }
+
+
+.list-inline {
+    li { 
+        display: inline-block; 
+        margin-right: 15px;
+        
+        &:last-child { margin-right: 0; }
+    }
+}
+
+.icon-letter {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 22px;
+    text-align: center;
+    
+    &.outline {
+        font-size: 14px;
+        border-radius: 50%;
+        border: 2px solid $gray-color-dark;
+        
+        &.active {
+            background-color: $gray-color-dark;
+            color: $light-color;
+        }
+    }
+}

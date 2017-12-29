@@ -1,0 +1,43 @@
+$proximaNova-font-path: '../fonts/proximaNova/' !default;
+
+@font-face {
+	font-family: 'ProximaNova';
+	src:	url('#{$proximaNova-font-path}ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+			url('#{$proximaNova-font-path}ProximaNova-Light.otf') format('opentype'),
+			url('#{$proximaNova-font-path}ProximaNova-Light.woff') format('woff'),
+			url('#{$proximaNova-font-path}ProximaNova-Light.ttf') format('truetype'),
+			url('#{$proximaNova-font-path}ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src:	url('#{$proximaNova-font-path}ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+			url('#{$proximaNova-font-path}ProximaNova-Regular.otf') format('opentype'),
+			url('#{$proximaNova-font-path}ProximaNova-Regular.woff') format('woff'),
+			url('#{$proximaNova-font-path}ProximaNova-Regular.ttf') format('truetype'),
+			url('#{$proximaNova-font-path}ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src:	url('#{$proximaNova-font-path}ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+			url('#{$proximaNova-font-path}ProximaNova-Semibold.otf') format('opentype'),
+			url('#{$proximaNova-font-path}ProximaNova-Semibold.woff') format('woff'),
+			url('#{$proximaNova-font-path}ProximaNova-Semibold.ttf') format('truetype'),
+			url('#{$proximaNova-font-path}ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src:	url('#{$proximaNova-font-path}ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+			url('#{$proximaNova-font-path}ProximaNova-Bold.otf') format('opentype'),
+			url('#{$proximaNova-font-path}ProximaNova-Bold.woff') format('woff'),
+			url('#{$proximaNova-font-path}ProximaNova-Bold.ttf') format('truetype'),
+			url('#{$proximaNova-font-path}ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: 700;
+}
+
+.font-family { font-family: ProximaNova, Roboto, 'Open Sans', Tahoma, Verdana, Arial, sans-serif; }

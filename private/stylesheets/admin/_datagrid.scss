@@ -1,0 +1,215 @@
+.datagrid {
+    background-color: $light-color;
+    padding: 0 !important;
+    @extend .z-depth-2;
+    
+    /*.page-content > & { @extend .no-shadow; }*/
+    
+    #grid-filter {
+        display: none;
+        position: relative;
+        padding: 10px 30px 0 30px;
+        background-color: $secondary-color-light;
+        -webkit-box-shadow:inset 0 10px 10px 0 rgba(0,0,0,.1);
+        box-shadow:inset 0 10px 10px 0 rgba(0,0,0,.1);
+        
+        &.active { display: block; }
+        
+        &:after {
+            top: 100%;
+            left: 22px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            z-index: 100;
+            pointer-events: none;
+            border-color: rgba(136, 183, 213, 0);
+            border-top-color: $secondary-color-light;
+            border-width: 8px;
+        }
+    }
+    
+    table {
+        thead {
+            tr {
+                th {
+                    padding: 18px 10px 10px 10px;
+                    vertical-align: top;
+                    @extend .font-semibold;
+                    color: $secondary-color;
+
+                    a {
+                        color: $secondary-color;
+
+                        &:hover,
+                        &:focus {
+                            color: $gray-color-dark;
+                        }
+                    }
+
+                    hr { display: none; }
+                    
+                    &.col-checkbox { 
+                        padding-top: 10px;
+                        padding-left: 15px;
+                        background-color: transparent; 
+                    }
+                }
+
+                &.row-group-actions {
+                    border: 0;
+
+                    th {
+                        padding: 10px;
+                        background-color: $light-color !important;
+                        @extend .z-depth-2;
+
+                        .datagrid-toolbar { 
+                            margin: 0;
+                            
+                            span { margin: 0; }
+                        }
+                    }
+                    
+                    input,
+                    select {
+                        display: inline-block;
+                        margin: 0;
+                        width: inherit;
+                        height: 26px;
+                    }
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 10px 15px;
+                    
+                    &.col-checkbox { 
+                        padding-top: 10px;
+                        padding-left: 15px;
+                    }
+                    
+                    &.col-action { 
+                        text-align: right; 
+                        
+                        > a, > span { visibility: hidden; }
+                    }
+                    
+                    &.no-items {
+                        padding: 50px;
+                        @extend .text-muted;
+                        text-align: center;
+                        background-color: $gray-color-light;
+                    }
+                    
+                    .dropdown {
+                        .btn-xs {
+                            line-height: 18px;
+                        }
+                        
+                        ul {
+                            width: auto !important;
+                            
+                            li { @extend .text-nowrap; }
+                        }
+                        
+                        .material-icons { font-size: 18px; }
+                    }
+                }
+                
+                &:hover,
+                &:focus {
+                    td {
+                        &.col-action {
+                            > a, > span { visibility: visible; }
+                        }
+                    }
+                }
+            }
+        }
+        
+        tfoot {
+            .row-grid-bottom {
+                background-color: transparent !important;
+                border: 0;
+                
+                .col-per-page {
+                    .input-field { 
+                        margin-top: 0; 
+                        
+                        .select-wrapper { 
+                            display: inline-block;
+                            width: inherit;
+                            
+                            input { 
+                                margin: 0; 
+                                height: 30px;
+                            }
+                        }
+                    }
+                }
+                
+                .col-pagination {
+                    width: 100%;
+                    
+                    .pagination {
+                        li {
+                            a {
+                                color: $gray-color-dark;
+                                
+                                &:hover { color: $dark-color; }
+                                
+                                &.disabled { color: $gray-color; }
+                                &.active { 
+                                    border-radius: 2px;
+                                    background-color: $primary-color;
+                                    color: $light-color; 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        &.striped {
+            tbody {
+                tr {
+                    &:nth-child(odd) { background-color: $gray-color-light; }
+                }
+            }
+        }
+        
+        &.highlight {
+            tbody {
+                tr {
+                    &:hover { background-color: lighten($secondary-color-light, 12%); }
+                }
+            }
+        }
+    }
+}
+
+form {
+    .datagrid {
+        @extend .z-depth-2;
+        
+        table {
+            thead {
+                tr {
+                    &.row-group-actions { 
+                        th { 
+                            padding: 10px !important;
+                            height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

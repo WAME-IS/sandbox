@@ -1,0 +1,19 @@
+{**
+ * @param Filter                         $filter
+ * @param Nette\Forms\Controls\TextInput $input
+ * @param string                         $icon_prefix       Icon prefix (fa fa-)
+ *}
+
+{if $outer}
+	<div class="input-field">
+        {input $input}
+		{label $input/}
+	</div>
+{else}
+	<div class="form-inline">
+		<div class="input-field">
+			{input $input}
+			<label n:name="$input" class="input-group-addon"><span class="{$icon_prefix}calendar"></span></label>
+		</div>
+	</div>
+{/if}

@@ -1,0 +1,40 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@light:              #fff;
+
+
+//
+// Mixins
+// --------------------------------------------------
+
+/* VERTICAL ALIGN */
+// on parent
+.transform-style(@style: preserve-3d) {
+	-webkit-transform-style: @style;
+	   -moz-transform-style: @style;
+			transform-style: @style;
+}
+
+// on children		
+.vertical-align() {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.hor-ver-align() {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin: 0 auto;
+	.translate (-50% , -50%);
+}

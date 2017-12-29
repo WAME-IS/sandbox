@@ -1,0 +1,148 @@
+.scraper {
+    .browser {
+        width: 100%;
+        height: 100%;
+        border: none;
+        -moz-transform: scale(0.2);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(0.2);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(0.2);
+        -webkit-transform-origin: 0 0;
+    }
+
+    .sidebar {
+        @extend .card-panel;
+        @extend .bg-light;
+        margin: 0;
+        padding: 0;
+        min-height: calc(100vh - 100px);
+
+
+        .buttons {
+            padding: 5px;
+            max-width: 55px;
+            background-color: $gray-color-light;
+
+            ul { margin: 0; }
+        }
+
+        .actions {
+            padding: 20px;
+
+            .tasks {
+                margin-top: 25px;
+
+                .group {
+                    .task {
+                        margin: 2px 0;
+                        padding: 2px 5px 2px 2px;
+                        height: 34px;
+                        line-height: 32px;
+                        background-color: darken($gray-color-light, 5%);
+                        color: $dark-color-dark;
+                        border-radius: 4px;
+
+                        input {
+                            margin: 0;
+                            padding: 0 8px;
+                            height: 30px;
+                            width: 50%;
+                            border: 0;
+
+                            &:hover,
+                            &:focus {
+                                background-color: rgba(255,255,255,.3);
+                                border: 0;
+                                box-shadow: none;
+
+                            }
+                        }
+
+                        .btn {
+                            height: 30px;
+
+                            .material-icons {
+                                margin-top: -5px;
+                                line-height: 30px;
+                                font-size: 1.5em;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: darken($gray-color-light, 10%);
+                        }
+                    }
+
+                    .subtasks {
+                        .task {
+                            margin-left: 30px;
+                            padding: 2px 5px 2px 10px;
+                            background-color: lighten($secondary-color-dark, 10%);
+                            color: $light-color;
+
+                            .count {
+                                float: right;
+                                text-align: right;
+                            }
+
+                            a {
+                                color: $light-color;
+
+                                &:hover { color: rgba(255,255,255,.75); }
+                            }
+
+                            &:hover {
+                                background-color: lighten($secondary-color-dark, 5%);
+                            }
+
+                            &.selection {
+                                margin-left: 0;
+                                background-color: $secondary-color-light;
+                                color: $dark-color-dark;
+
+                                &:hover {
+                                    background-color: darken($secondary-color-light, 5%);
+                                }
+
+                                a {
+                                    color: $dark-color-light;
+
+                                    &:hover { color: $dark-color-dark; }
+                                }
+                            }
+
+                            &.action {
+                                .link {
+                                    display: inline-block;
+                                    width: 75%;
+                                }
+                            }
+
+                            &.active {
+                                background-color: $primary-color-dark;
+                                color: $light-color;
+
+                                a {
+                                    color: $light-color;
+
+                                    &:hover { color: $dark-color-dark; }
+                                }
+
+                                &.selection {
+                                    background-color: darken($secondary-color-light, 25%);
+
+                                    a {
+                                        color: $light-color;
+
+                                        &:hover { color: rgba(255,255,255,.75); }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

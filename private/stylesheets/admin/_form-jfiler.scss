@@ -1,0 +1,27 @@
+.jFiler {
+    &.jFiler-theme-default {
+        .jFiler-input {
+            margin: 0;
+            width: 100%;
+            border: 0;
+            font-size: inherit;
+            border-radius: 0;
+            @extend .no-shadow;
+            
+            .jFiler-input-caption {
+                width: 100%;
+                border-bottom: 1px solid $gray-color;
+            }
+            
+            .jFiler-input-button {
+                position: absolute;
+                right: 0;
+                @extend .btn.btn-primary;
+                @extend .font-bold;
+                text-transform: uppercase;
+                border: 2px solid $primary-color;
+                background-image: none;
+            }
+        }
+    }
+}

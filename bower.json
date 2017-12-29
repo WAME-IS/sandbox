@@ -1,0 +1,415 @@
+{
+  "name": "wame/wame-is-sandbox",
+  "authors": [
+    "WAME s.r.o. <info@wame.sk>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "private/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "multilevelpushmenu": "^2.1.4",
+    "jqTree": "jqtree#^1.3.3",
+    "jQuery.dotdotdot": "^1.8.2",
+    "lightslider": "^1.1.5",
+    "ublaboo-datagrid": "^4.4",
+    "nette.ajax.js": "^2.1.0",
+    "happy": "^1.0.5",
+    "bootstrap-datepicker": "^1.6.1",
+    "bootstrap-select": "^1.10.0",
+    "imagesloaded": "^4.1.0",
+    "textarea-autosize": "^0.4.2",
+    "SpinKit": "^1.2.5",
+    "material-design-lite": "^1.2.1",
+    "materialize": "^v0.97.8",
+    "flexboxgrid": "^6.3.2",
+    "ion.rangeSlider": "ionrangeslider#^2.1.4",
+    "select2": "^4.0.3",
+    "tinymce": "^4.4",
+    "bootstrap-material-datetimepicker": "^2.7",
+    "bootstrap-autohidingnavbar": "^1.0.6",
+    "nette-live-form-validation": "^1.8.1",
+    "nouislider": "noUiSlider#^10.1.0",
+    "object-fit-images": "*"
+  },
+  "devDependencies": {},
+  "preen": {
+    "bootstrap": [
+      "fonts/*.*",
+      "js/*.js",
+      "less/*.less",
+      "less/mixins/*.less"
+    ],
+    "bootstrap-autohidingnavbar": [
+      "dist/*.js"
+    ],
+    "bootstrap-datepicker": [
+      "dist/js/*.*",
+      "dist/css/*.*",
+      "dist/locales/*.js"
+    ],
+    "bootstrap-select": [
+      "dist/js/*.*",
+      "dist/css/*.*"
+    ],
+    "happy": [
+      "dist/*.*"
+    ],
+    "jquery": [
+      "dist/*.js"
+    ],
+    "nette.ajax.js": [
+      "extensions/*.*",
+      "nette.ajax.js"
+    ],
+    "nette-live-form-validation": [
+      "*.js"
+    ],
+    "nouislider": [
+      "distribute/*.css",
+      "distribute/*.js"
+    ],
+    "jqTree": [
+      "jqtree.css",
+      "jqtree-circle.png",
+      "tree.jquery.js"
+    ],
+    "material-design-lite": [
+      "src/*.scss",
+      "src/**/*.scss",
+      "src/**/*.js"
+    ],
+    "materialize": [
+      "sass/*.scss",
+      "sass/components/*.scss",
+      "sass/components/date_picker/*.scss",
+      "sass/components/forms/*.scss",
+      "js/*.js",
+      "js/date_picker/*.js"
+    ],
+    "flexboxgrid": [
+      "dist/*.min.css",
+      "vendor/js/modernizr.flexbox.js"
+    ],
+    "ion.rangeSlider": [
+      "css/*.css",
+      "js/*.js",
+      "img/*.png"
+    ],
+    "multilevelpushmenu": [
+      "*.min.js",
+      "*.css"
+    ],
+    "jQuery.dotdotdot": [
+      "src/*.js"
+    ],
+    "lightslider": [
+      "dist/**/*",
+      "dist/img/*"
+    ],
+    "select2": [
+      "dist/css/*.*",
+      "dist/js/*.*"
+    ],
+    "SpinKit": [
+      "css/spinners/*.css",
+      "css/*.css"
+    ],
+    "ublaboo-datagrid": [
+      "assets/dist/*"
+    ],
+    "tinymce": [
+      "plugins/**/*.min.js",
+      "plugins/**/*.css",
+      "skins/**/*",
+      "themes/**/*.min.js",
+      "*.min.*"
+    ],
+    "bootstrap-material-datetimepicker": [
+      "css/*.css",
+      "js/*.js"
+    ]
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "fonts/*.*",
+        "js/*.js",
+        "less/*.less",
+        "less/mixins/*.less"
+      ],
+      "normalize": {
+        "fonts": [
+          "**/*.eot",
+          "**/*.svg",
+          "**/*.ttf",
+          "**/*.woff",
+          "**/*.woff2"
+        ],
+        "less/mixins": "**/mixins/*.less"
+      }
+    },
+    "bootstrap-autohidingnavbar": {
+      "main": [
+        "dist/*.js"
+      ],
+      "normalize": {
+        "js": "**/*.js"
+      }
+    },
+    "bootstrap-datepicker": {
+      "main": [
+        "dist/css/*.css",
+        "dist/js/*.js",
+        "dist/locales/*.js"
+      ],
+      "normalize": {
+        "css": "**/css/*.css",
+        "js": "**/js/*.js",
+        "locales": "**/locales/*.js"
+      }
+    },
+    "bootstrap-select": {
+      "main": [
+        "dist/css/*.css",
+        "dist/js/*.js"
+      ],
+      "normalize": {
+        "css": "**/css/*.css",
+        "js": "**/js/*.js"
+      }
+    },
+    "happy": {
+      "main": [
+        "dist/*.*"
+      ],
+      "normalize": {
+        "css": "*.css",
+        "js": "*.js"
+      }
+    },
+    "imagesloaded": {
+      "main": [
+        "imagesloaded.js",
+        "imagesloaded.pkgd.js",
+        "imagesloaded.pkgd.min.js"
+      ],
+      "normalize": {
+        "js": "*.js"
+      }
+    },
+    "jquery": {
+      "main": "dist/*.js",
+      "normalize": {
+        "js": "*.js"
+      }
+    },
+    "jqTree": {
+      "main": [
+        "jqtree.css",
+        "jqtree-circle.png",
+        "tree.jquery.js"
+      ],
+      "normalize": {
+        "css": "*.css",
+        "js": "*.js",
+        "img": [
+          "*.png",
+          "*.jpg"
+        ]
+      }
+    },
+    "jQuery.dotdotdot": {
+      "main": [
+        "src/*.*"
+      ],
+      "normalize": {
+        "js": "*.js"
+      }
+    },
+    "material-design-lite": {
+      "main": [
+        "src/*.scss",
+        "src/**/*.scss",
+        "src/**/*.js"
+      ],
+      "normalize": {
+        "": [
+          "**/*.scss",
+          "**/*.js"
+        ],
+        "animation": "**/animation/*",
+        "badge": "**/badge/*",
+        "button": "**/button/*",
+        "card": "**/card/*",
+        "checkbox": "**/checkbox/*",
+        "chip": "**/chip/*",
+        "data-table": "**/data-table/*",
+        "dialog": "**/dialog/*",
+        "footer": "**/footer/*",
+        "grid": "**/grid/*",
+        "icon-toggle": "**/icon-toggle/*",
+        "layout": "**/layout/*",
+        "list": "**/list/*",
+        "menu": "**/menu/*",
+        "palette": "**/palette/*",
+        "progress": "**/progress/*",
+        "radio": "**/radio/*",
+        "resets": "**/resets/*",
+        "ripple": "**/ripple/*",
+        "shadow": "**/shadow/*",
+        "slider": "**/slider/*",
+        "snackbar": "**/snackbar/*",
+        "spinner": "**/spinner/*",
+        "switch": "**/switch/*",
+        "tabs": "**/tabs/*",
+        "textfield": "**/textfield/*",
+        "third_party": "**/third_party/*",
+        "tooltip": "**/tooltip/*",
+        "typography": "**/typography/*"
+      }
+    },
+    "materialize": {
+      "main": [
+        "sass/*.scss",
+        "sass/components/*.scss",
+        "sass/components/date_picker/*.scss",
+        "sass/components/forms/*.scss",
+        "js/*.js",
+        "js/date_picker/*.js"
+      ],
+      "normalize": {
+        "sass": "**/*.scss",
+        "sass/components": "**/components/*.scss",
+        "sass/components/date_picker/": "**/components/date_picker/*.scss",
+        "sass/components/forms/": "**/components/forms/*.scss",
+        "js": "js/*.js",
+        "js/date_picker": "**/date_picker/*.js"
+      }
+    },
+    "nette-live-form-validation": {
+      "main": [
+        "*.js"
+      ],
+      "normalize": {
+        "js": "*.js"
+      }
+    },
+    "nouislider": {
+      "main": [
+        "distribute/*.css",
+        "distribute/*.js"
+      ],
+      "normalize": {
+        "css": "distribute/*.css",
+        "js": "distribute/*.js"
+      }
+    },
+    "flexboxgrid": {
+      "main": [
+        "dist/*.min.css",
+        "vendor/js/modernizr.flexbox.js"
+      ],
+      "normalize": {
+        "css": "dist/*.min.css",
+        "js": "vendor/js/modernizr.flexbox.js"
+      }
+    },
+    "ion.rangeSlider": {
+      "main": [
+        "css/*.css",
+        "js/*.js",
+        "img/*.png"
+      ],
+      "normalize": {
+        "img": "**/*.png"
+      }
+    },
+    "lightslider": {
+      "main": [
+        "dist/js/*.min.js",
+        "dist/css/*.min.css",
+        "dist/img/*.png"
+      ],
+      "normalize": {
+        "js": "*.js",
+        "css": "*.css",
+        "img": "**/*.png"
+      }
+    },
+    "multilevelpushmenu": {
+      "main": [
+        "*.js",
+        "*.css"
+      ],
+      "normalize": {
+        "css": [
+          "*.css"
+        ],
+        "js": [
+          "*.js"
+        ]
+      }
+    },
+    "nette.ajax.js": {
+      "main": [
+        "extensions/*.*",
+        "nette.ajax.js"
+      ],
+      "normalize": {
+        "extensions": "**/extensions/*.js",
+        "js": "nette.ajax.js"
+      }
+    },
+    "select2": {
+      "main": [
+        "dist/js/*.min.js",
+        "dist/css/*.min.css"
+      ],
+      "normalize": {
+        "js": "*.js",
+        "css": "*.css"
+      }
+    },
+    "SpinKit": {
+      "main": [
+        "css/spinners/*.css",
+        "css/*.css"
+      ],
+      "normalize": {
+        "css/spinners": "**/spinners/*.css",
+        "css": "spinkit.css"
+      }
+    },
+    "ublaboo-datagrid": {
+      "main": "assets/dist/*.min.*",
+      "normalize": {
+        "assets/dist/": "*"
+      }
+    },
+    "bootstrap-material-datetimepicker": {
+      "main": [
+        "css/*.css",
+        "js/*.js"
+      ],
+      "normalize": {
+        "css": "*.css",
+        "js": "*.js"
+      }
+    },
+    "object-fit-images": {}
+  },
+  "resolutions": {
+    "bootstrap": "^3.3.7",
+    "jquery": "1.9.1 - 3"
+  }
+}

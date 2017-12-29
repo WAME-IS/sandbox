@@ -1,0 +1,13 @@
+parameters:
+    customTemplate:
+
+    user:
+        loginExpiration:
+            remember: '14 days'
+            forget: '30 minutes'
+
+webloader:
+    css:
+        default:
+            files:
+                - %appDir%/../private/stylesheets/layout.less

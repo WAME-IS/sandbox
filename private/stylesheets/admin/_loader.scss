@@ -1,0 +1,39 @@
+@mixin loader($size: 32px, $color : $primary-color, $weight : 4px, $speed : 0.8s) {
+    display: inline-block;
+    height: $size;
+    width: $size;
+    border: $weight solid $color;
+    border-right-color: transparent !important;
+    border-radius: 50%;
+    animation: rotate $speed infinite linear;
+}
+
+@keyframes rotate {
+    0%    { transform: rotate(0deg); }
+    100%  { transform: rotate(360deg); }
+}
+
+.loader {
+    @include loader();
+    
+    &.light { border-color: $light-color; }
+    
+    &.small { 
+        height: 24px; 
+        width: 24px;
+        border-width: 3px;
+    }
+    &.large { 
+        height: 64px; 
+        width: 64px; 
+    }
+}
+
+.with-loader {
+    .hidden { display: none; }
+    
+    &.active {
+        .showed { display: none; }
+        .hidden { display: inline-block; }
+    }
+}

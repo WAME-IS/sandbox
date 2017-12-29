@@ -1,0 +1,150 @@
+ul.jqtree-tree {
+    margin: 0;
+    
+    li.jqtree_common {
+        .jqtree-element {
+            display: block;
+            margin-left: 65px;
+            padding: 5px 0;
+            /*border-bottom: 1px solid $gray-color;*/
+            
+            .jqtree-toggler {
+                display: inline-block;
+                margin-left: -65px;
+                margin-right: 50px;
+                width: 24px;
+                height: 24px;
+                font-size: 0;
+                border-radius: 50%;
+                border: 2px solid $secondary-color-dark;
+                background-color: $secondary-color-dark;
+                
+                &:after {
+                    content: '\E5C7';
+                    display: inline-block;
+                    margin-top: -7px;
+                    margin-left: -2px;
+                    @extend .font-icon;
+                    font-size: 24px;
+                    color: $light-color;
+                }
+                
+                &.jqtree-closed {
+                    background-color: transparent;
+                    border-color: $gray-color;
+                    
+                    &:after {
+                        content: '\E5C5';
+                        color: $gray-color;
+                    }
+                }
+            }
+            
+            .jqtree-title {
+                display: inline-block;
+                margin-left: 9px;
+                padding-bottom: 6px;
+                line-height: 0;
+                color: $gray-color-dark;
+                
+                &:before {
+                    content: '\E835';
+                    display: inline-block;
+                    position: relative;
+                    top: 6px;
+                    margin-left: -40px;
+                    margin-right: 20px;
+                    @extend .font-icon;
+                    font-size: 24px;
+                    color: $gray-color;
+                }
+                
+                &.jqtree-title-folder {
+                    margin-left: 0;
+                }
+            }
+            
+            &:hover {
+                .jqtree-title { color: $secondary-color-dark; }
+                .jqtree-toggler {
+                    &.jqtree-closed {
+                        border-color: $secondary-color-dark;
+                        
+                        &:after { color: $secondary-color-dark; }
+                    }
+                }
+            }
+        }
+        
+/*        &:nth-child(even) { 
+            .jqtree-element { background-color: $gray-color-light !important; }
+        }*/
+        
+        &.jqtree-selected {
+            > .jqtree-element { 
+                background: transparent;
+                text-shadow: none;
+                
+                .jqtree-title {
+                    &:before {
+                        content: '\E834';
+                        @extend .font-icon;
+                        font-size: 24px;
+                        color: $success-color;
+                    }
+                }
+                
+                &:hover { background: transparent; }
+            }
+        }
+    }
+    
+    
+    
+    ul.jqtree_common {
+        &[role="group"] {
+            position: relative;
+            margin-left: 40px;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -5px;
+                left: -29px;
+                height: calc(100% - 11px);
+                border-left: 2px solid $gray-color;
+            }
+            
+            .jqtree-folder {
+                .jqtree-element {
+                    .jqtree-toggler {
+                        &:before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            left: -93px;
+                            width: 28px;
+                            height: 11px;
+                            border-bottom: 2px solid $gray-color;
+                        }
+                    }
+                 }
+            }          
+        }
+    }
+}
+
+.categoryTree {
+    &.light {
+        ul.jqtree-tree {
+            li.jqtree_common {
+                .jqtree-element {            
+                    .jqtree-title {
+                        color: $light-color;
+                    }
+                }
+            }
+        }
+    }
+}

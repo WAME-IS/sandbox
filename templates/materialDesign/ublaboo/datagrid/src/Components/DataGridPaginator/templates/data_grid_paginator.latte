@@ -1,0 +1,43 @@
+{*
+ * @param Paginator $paginator
+ * @param array     $steps
+ * @param string    $icon_prefix
+ *}
+
+{var $link = [$control->getParent(), link]}
+
+<ul n:if="$paginator->pageCount > 1" class="pagination">
+    <li>
+        {if $paginator->isFirst()}
+            <a class="disabled">
+        {else}
+            <a class="ajax" href="{$link('page!', ['page' => $paginator->page - 1])}" rel="prev">
+        {/if}
+            <i n:block = "icon-arrow-left" class="{$icon_prefix}">keyboard_arrow_left</i> 
+            {_'ublaboo_datagrid.previous'}
+        </a>
+    </li>
+
+	{foreach $steps as $step}
+        <li>
+		{if $step == $paginator->page}
+			<a class="active">{$step}</a>
+		{else}
+			<a class="waves-effect ajax" href="{$link('page!', ['page' => $step])}">{$step}</a>
+		{/if}
+		
+		{if $iterator->nextValue > $step + 1}<span>…</span>{/if}
+        </li>
+	{/foreach}
+
+    <li>
+        {if $paginator->isLast()}
+            <a class="disabled">
+        {else}
+            <a class="ajax" href="{$link('page!', ['page' => $paginator->page + 1])}" rel="next">
+        {/if}
+            {_'ublaboo_datagrid.next'} 
+            <i n:block = "icon-arrow-right" class="{$icon_prefix}">keyboard_arrow_right</i>
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,414 @@
+@import 'form-inputTypes';
+
+
+// RESETS
+
+.form-group { 
+    @extend .input-field;
+    
+    textarea { @extend .materialize-textarea; }
+
+    .ckeditor + label { display: none; }
+}
+
+
+// DEFAULT CONTROLS
+
+.input-field,
+.form-group {
+    label { 
+        left: 0;
+        font-size: 16px;
+        color: $dark-color; 
+        
+        &.active {
+            font-size: 14px;
+            color: $primary-color; 
+        }
+    }
+    
+    #{$input-types} { 
+        position: relative;
+        z-index: 1;
+        height: 40px; 
+    }
+    
+    #{$input-types},
+    textarea {
+        margin-bottom: 10px;
+        border-bottom: 1px solid $gray-color;
+        font-size: 16px;
+        color: $dark-color;
+
+        &:focus {
+            &:not([readonly]) {
+                border-bottom: 1px solid $primary-color;
+                box-shadow: 0 1px 0 0 $primary-color;
+            }
+        }
+
+        &.valid {
+            border-bottom: 1px solid $success-color;
+            box-shadow: 0 1px 0 0 $success-color;
+        }
+
+        &.invalid {
+            border-bottom: 1px solid $danger-color;
+            box-shadow: 0 1px 0 0 $danger-color;
+        }
+
+        &[disabled] { border-bottom: 1px dotted $gray-color; }
+
+        &[readonly] { 
+            border-bottom: 1px dotted $gray-color-dark; 
+            
+            &.select-dropdown { border-bottom: 1px solid $gray-color; }
+        }
+    }
+    
+    .select-wrapper {
+        .select-dropdown { border-bottom: 1px solid $gray-color; }
+        
+        + label { color: $primary-color; }
+        
+        .dropdown-content {
+            @extend .cursor-hand;
+            @extend .z-depth-2;
+            
+            li {
+                span {
+                    border-bottom: 1px solid $gray-color-light;
+                    color: $dark-color; 
+                }
+                
+                &.selected {
+                    span { background-color: $light-color; }
+                }
+
+                &.active {
+                    span {
+                        border-color: $primary-color-dark;
+                        background-color: $primary-color;
+                        color: $light-color;
+                    }
+                }
+
+                &:hover {
+                    span {
+                        background-color: $gray-color-light;
+                        color: $primary-color;
+                    }
+                    
+                    &.active {
+                        span { 
+                            background-color: $primary-color-dark; 
+                            color: $light-color;
+                        }
+                    }
+                }
+                
+                &:last-child {
+                    span { border-bottom: 0; }
+                }
+            }
+        }
+    }
+    
+    &.has-error {
+        label { color: $danger-color; }
+        
+        #{$input-types},
+        .select-dropdown,
+        textarea {
+            border-bottom: 1px solid $danger-color;
+            box-shadow: 0 1px 0 0 $danger-color;
+        }
+    }
+    
+    .prefix {
+        z-index: 0;
+        color: $dark-color;
+        
+        &.active { color: $primary-color; }
+    }
+}
+
+
+// LIGHT CONTROLS e.g.: Grid filter
+
+.input-field-light {
+    .input-field,
+    .form-group {
+        #{$input-types} {
+            border-color: $light-color;
+            color: $light-color;
+            
+            &:focus {
+                border-color: $secondary-color-dark;
+                color: $secondary-color-dark;
+                box-shadow: 0 1px 0 0 $secondary-color-dark;
+                
+                &:not([readonly]) {
+                    border-color: $secondary-color-dark;
+                    color: $secondary-color-dark;
+                    box-shadow: 0 1px 0 0 $secondary-color-dark;
+                    
+                    + label { color: $secondary-color-dark; }
+                }
+            }
+        }
+        
+        .select-wrapper {
+            input {
+                border-bottom: 1px solid $light-color !important;
+            }
+        }
+        
+        label { 
+            color: $light-color; 
+            
+            &.active { color: $light-color; }
+        }
+    }
+}
+
+
+// RADIO AND CHECKBOX CONTROLS
+
+input {
+    &[type=radio] {
+        + label { top: 0; }
+        
+        &:not(.with-gap) {
+            &:not(:checked) {
+                + label {
+                    &:before { border-color: $gray-color; }
+                }
+            }
+            
+            &:checked {
+                + label {
+                    &:before { border-color: $primary-color; }
+                    
+                    &:after {
+                        border-color: $primary-color;
+                        background-color: $primary-color;
+                    }
+                }
+            }
+        }
+        
+        &.with-gap {
+            &:not(:checked) {
+                + label {
+                    &:after { border-color: $gray-color; }
+                }
+            }
+            
+            &:checked {
+                + label {
+                    &:before { border-color: $primary-color; }
+                    
+                    &:after {
+                        border-color: $primary-color;
+                        background-color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+    
+    &[type=checkbox] {
+        + label { top: 0; }
+        
+        &:not(.filled-in) {
+            &:not(:checked) {
+                + label {
+                    &:before { border-color: $gray-color; }
+                }
+            }
+            
+            &:checked {
+                + label {
+                    &:before { 
+                        border-right-color: $primary-color; 
+                        border-bottom-color: $primary-color; 
+                    }
+                }
+            }
+        }
+        
+        &.filled-in {
+            &:not(:checked) {
+                + label {
+                    &:after { border-color: $gray-color; }
+                }
+            }
+            
+            &:checked {
+                + label {
+                    &:after {
+                        border-color: $primary-color;
+                        background-color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// FORM GROUP
+
+form {
+    .group {
+        fieldset {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 30px;
+            padding: 20px 0 0 0;
+            border: 0;
+            background-color: $light-color;
+            @extend .z-depth-3;
+
+            legend {
+                display: block;
+                margin-bottom: 10px;
+                padding: 20px 30px;
+                width: 100%;
+                @extend .text-headline;
+                background-color: $light-color;
+                @extend .z-depth-2;
+                
+                .btn-link { 
+                    padding: 0;
+                    border: 0;
+                    font-size: 14px; 
+                    
+                    i { margin-right: 5px; }
+                }
+            }
+
+            .form-group,
+            .input-field {
+                margin-top: 0;
+                margin-left: 30px;
+                margin-right: 30px;
+                padding-bottom: 15px;
+                border-bottom: 0;
+
+                .help-block { display: block; }
+            }
+        }
+        
+        &.form-group-transparent {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin: 0;
+            text-align: right;
+
+            fieldset { 
+                text-align: left;
+                background-color: transparent;
+                @extend .no-shadow;
+                
+                legend {
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                    background-color: transparent;
+                    @extend .no-shadow;
+                }
+                
+                .form-group,
+                .input-field {
+                    margin-left: 0;
+                    margin-right: 0;
+                    
+                    @media #{$medium-and-up} {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        
+        &.submit-group {
+            padding: 0 30px;
+
+            [type="submit"] { margin-right: 7.5px; }
+
+            @media #{$medium-and-up} {
+                padding: 0 10px;
+            }
+            
+            @media #{$large-and-up} {
+                padding: 0;
+            }
+        }
+        
+        &.form-group-empty { 
+            fieldset { padding-top: 30px; }
+        }
+    }
+    
+    .error {
+        margin: 0;
+        padding: 20px 30px;
+        background-color: $danger-color;
+        color: $light-color;
+        @extend .z-depth-1;
+    }
+}
+
+
+// FORM DIRECT DESCENDANT IN CONTENT
+
+.page-content {
+    > form,
+    .page > form {
+        @extend .card-panel;
+        @extend .z-depth-0;
+        margin-top: 0;
+        margin-bottom: 25px;
+        padding: 0;
+        
+        @media #{$medium-and-up} {
+            margin: 25px 20px;
+        }
+        
+        @media #{$large-and-up} {
+            margin: 40px;
+        }
+        
+        .error {
+            position: relative;
+            top: -40px;
+            margin-left: -40px;
+            margin-right: -40px;
+        }
+    }
+}
+
+
+// TABS
+
+.form-tabs {
+    margin-bottom: 20px;
+    background-color: $light-color;
+    @extend .z-depth-1;
+    
+    @media #{$medium-and-up} {
+        margin-top: -25px;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 25px;
+    }
+    
+    @media #{$large-and-up} {
+        margin-top: -40px;
+        margin-left: -40px;
+        margin-right: -40px;
+        margin-bottom: 40px;
+    }
+}

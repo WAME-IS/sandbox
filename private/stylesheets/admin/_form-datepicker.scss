@@ -1,0 +1,238 @@
+// MaterializeCss Date Picker
+
+.picker {
+    .picker__holder {
+        background-color: rgba(red($secondary-color-dark), green($secondary-color-dark), blue($secondary-color-dark), .5);
+        
+        .picker__box {
+            .picker__date-display {
+                background-color: $primary-color;
+                
+                .picker__weekday-display { background-color: $primary-color-dark; }
+            }
+            
+            .picker__calendar-container {
+                .picker__table {
+                    thead {
+                        .picker__weekday { color: $secondary-color; }
+                    }
+                    
+                    tbody {
+                        td {
+                            padding: 0;
+
+                            .picker__day--selected { background-color: $primary-color; }
+                        }
+                    }
+                }
+            }
+            
+            .picker__footer {
+                .btn-flat { color: $gray-color; }
+            }
+        }
+    }
+}
+
+
+// Date Picker
+
+.datepicker {
+    border-bottom-style: solid !important;
+    
+    &.datepicker-dropdown {
+        position: absolute;
+        padding: 0;
+        border-radius: 0;
+        background-color: $light-color;
+        @extend .z-depth-4;
+        
+        table {
+            th, td { border-radius: 0; }
+            
+            thead {
+                border: 0;
+                
+                tr {
+                    &:nth-child(2) {
+                        
+                        @extend .z-depth-2;
+                        
+                        th {
+                            padding: 0;
+                            @extend .font-semibold;
+                            height: 50px;
+                            
+                            &.datepicker-switch { font-size: 16px; }
+                        }
+                    }
+                    &:nth-child(3) {
+                        .dow {
+                            @extend .font-semibold;
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+            
+            tbody {
+                tr {
+                    td {
+                        width: 36px;
+                        height: 36px;
+                        color: $dark-color;
+                        
+                        &:hover { 
+                            background-color: $dark-color-light; 
+                            color: $light-color; 
+                        }
+                        
+                        &.old,
+                        &.new { 
+                            color: $gray-color;
+                            
+                            &:hover { 
+                                background-color: $secondary-color-light; 
+                                color: $light-color;
+                            }
+                        }
+                        &.today { 
+                            background-color: $primary-color;
+                            color: $light-color; 
+                            
+                            &:hover { background-color: $primary-color-dark; }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Reset default browser input
+
+.date-picker,
+.time-picker,
+.date-time-picker {
+    -webkit-appearance: none; 
+    
+    &::-webkit-clear-button { display: none; -webkit-appearance: none; }
+    &::-webkit-inner-spin-button { display: none; -webkit-appearance: none; }
+    &::-webkit-calendar-picker-indicator { display: none; -webkit-appearance: none; }
+    &::-webkit-datetime-edit-fields-wrapper { visibility: hidden !important; }
+    &::-webkit-input-placeholder { visibility: hidden !important; }
+}
+
+
+// Bootstrap Material Datetime Picker
+
+.dtp {
+    background-color: rgba(red($secondary-color-dark), green($secondary-color-dark), blue($secondary-color-dark), .85);
+    
+    .dtp-close { top: 5px; }
+    .dtp-buttons { 
+        padding: 0 0 15px 0;
+        text-align: center; 
+        
+        button {
+            &:hover { background-color: $gray-color-light; }
+        }
+    }
+    
+    div {
+        &.dtp-actual-num { margin: 5px 0; }
+        &.dtp-actual-year { 
+            font-weight: normal;
+            color: rgba(255,255,255,.4); 
+        }
+        &.dtp-time { background-color: $primary-color; }
+        &.dtp-actual-time { 
+            font-size: 1.5em; 
+            color: $secondary-color;
+        }
+    }
+    
+    .p10 {
+        > a {
+            color: darken($primary-color, 5%);
+            
+            &:hover,
+            &:focus {
+                color: $light-color;
+            }
+        }
+    }
+    
+    table.dtp-picker-days {
+        tr {
+            th { 
+                text-transform: uppercase;
+                color: $secondary-color; 
+            }
+        }
+    }
+    
+    > .dtp-content {
+        @extend .z-depth-4;
+        
+        > .dtp-date-view {
+            > header.dtp-header { background-color: $primary-color-dark; }
+        }
+        
+        .dtp-date { background-color: $primary-color; }
+        
+        .dtp-picker {
+            padding-bottom: 0;
+            
+            .dtp-picker-calendar {
+                .dtp-picker-month { display: none; }
+                .dtp-picker-days {
+                    thead { border: 0; }
+                    tbody {
+                        tr {
+                            td {
+                                .dtp-select-day {
+                                    font-size: 1.1em;
+                                    font-weight: normal;
+                                    color: $gray-color-dark;
+                                    
+                                    &:hover,
+                                    &:focus {
+                                        color: $dark-color;
+                                    }
+                                    
+                                    &.selected {
+                                        background-color: $primary-color;
+                                        color: $light-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#dtp-svg-clock {
+    .svg-clock {
+        circle {
+            &[r="192"] { 
+                fill: $light-color;
+                stroke: $gray-color-light;
+            }
+            &.dtp-select-hour:not([fill="transparent"]),
+            &.dtp-select-minute:not([fill="transparent"]) { 
+                fill: $primary-color !important; 
+            }
+        }
+        line {
+            &.hour-hand,
+            &.minute-hand { 
+                stroke: $gray-color; 
+            }
+        }
+    }
+}

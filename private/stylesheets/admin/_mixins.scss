@@ -1,0 +1,16 @@
+@mixin linear-gradient-top($default,$color1,$stop1,$color2,$stop2) {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop($stop1, $color1), color-stop($stop2 $color2));
+    background-image: -webkit-linear-gradient(top, $color1 $stop1, $color2 $stop2);
+    background-image: -moz-linear-gradient(top, $color1 $stop1, $color2 $stop2);
+    background-image: -ms-linear-gradient(top, $color1 $stop1, $color2 $stop2);
+    background-image: -o-linear-gradient(top, $color1 $stop1, $color2 $stop2);
+    background-image: linear-gradient(top, $color1 $stop1, $color2 $stop2);
+}
+
+@mixin linear-gradient-horizontal($default,$color1,$stop1,$color2,$stop2) {
+    background: $default;
+    background: -moz-linear-gradient(left, $color1 $stop1, $color2 $stop2);
+    background: -webkit-linear-gradient(left, $color1 $stop1, $color2 $stop2);
+    background: linear-gradient(to right, $color1 $stop1, $color2 $stop2);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color1, endColorstr=$color2, GradientType=1 );
+}

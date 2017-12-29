@@ -1,0 +1,39 @@
+form {
+    > fieldset {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 20px 0 0 0;
+        border: 0;
+        background-color: $light-color;
+        @extend .z-depth-3;
+
+        legend {
+            display: block;
+            margin-bottom: 10px;
+            padding: 20px 30px;
+            width: 100%;
+            @extend .text-headline;
+            background-color: $light-color;
+            @extend .z-depth-2;
+
+            .btn-link { 
+                padding: 0;
+                border: 0;
+                font-size: 14px; 
+
+                i { margin-right: 5px; }
+            }
+        }
+
+        .form-group,
+        .input-field {
+            margin-top: 0;
+            margin-left: 30px;
+            margin-right: 30px;
+            padding-bottom: 15px;
+            border-bottom: 0;
+
+            .help-block { display: block; }
+        }
+    }
+}

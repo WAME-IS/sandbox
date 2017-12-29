@@ -1,0 +1,13 @@
+{**
+ * @param Filter                         $filter
+ * @param Nette\Forms\Controls\TextInput $input
+ *}
+
+{if $outer}
+	<div class="input-field">
+        {input $input}
+		{label $input/}
+	</div>
+{else}
+	{input $input}
+{/if}
