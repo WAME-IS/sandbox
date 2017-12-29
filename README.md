@@ -6,7 +6,7 @@
 
 1. Nainštalujeme si všetky závislosti
     ```
-    composer update
+    composer install
     ```
 2. Premažeme temp priečinok 
     ```
