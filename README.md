@@ -1,6 +1,5 @@
 # WAME IS - sandbox
 
-[TOC]
 
 ## Inštalácia
 
@@ -12,39 +11,31 @@
     ```
     composer install
     ```
-3. Premažeme temp priečinok 
-    ```
-    composer clear
-    ```
-4. Nainštalujeme NPM závislosti
-    ```
-    npm install
-    ```
-5. Stiahneme componenty cez Bower
-    ```
-    bower install
-    ```
-6. Spustíme Gulp úlohy
-    ```
-    gulp
-    ```
-7. Vygenerujeme si schému databázy
+    
+## Príprava databazy
+
+### Úprava konfiguračného súboru
+Konfiguračný súbor **config.local.neon** obsahuje všetky potrebné konfiguračné nastavenia pre dané prostredie. Na localhoste bude súbor obsahovat iné údaje ako na produkčnom servery.
+
+**Postup:**
+- zduplikuje sa subor config.local.dist.neon, ktory sluzi ako predloha.
+- upravy sa nazov zduplikovaneho suboru na config.local.neon
+- vyplia sa potrebne pristupove a konfiguracne udaje
+
+### Generovanie databazy 
+1. Vygenerujeme si schému databázy
     ```
     php web/index.php orm:schema-tool:create
     ```
-8. Vygenerujeme si defaultne routy
+2. Vygenerujeme si defaultne routy
     ```
     php web/index.php router:update-default-routes
     ```
-9. Prenesieme migrácie zo všetkých modulov do hlavnej zložky
-    ```
-    php web/index.php migrations:collect
-    ```
-10. Spustíme migrácie
+3. Spustíme migrácie
     ```
     php web/index.php migrations:continue
     ```
-11. Vytvoríme defaultné pozície a componenty
+4. Vytvoríme defaultné pozície a componenty
     ```
     composer wame:component:update
     ```
@@ -54,3 +45,6 @@
 Zaregistrujeme sa na stránke `<domain>/user/sign/up`
 Ak chceme urobiť z prvého užívateľa administrátora tak v tabuľke `wame_user` prepíšeme v stĺpci `role` na hodnotu `admin`.
 Potom už budeme po prihlásení presmerovaný do administrácie `<domain>/admin` a všetky ďalšie úkony už môžeme robiť priamo tam.
+
+## Licencia
+GPL-3
