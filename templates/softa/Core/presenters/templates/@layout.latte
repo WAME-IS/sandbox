@@ -7,7 +7,7 @@
 
     {position head}
 
-    <title>{ifset #title}{include title|striptags} | {/ifset}CMS WAME Admin</title>
+    <title>{ifset #title}{include title|striptags} | {/ifset}CMS WAME Demo</title>
 
     {block head}
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic">
@@ -33,20 +33,27 @@
     </div>
 
 
-    <nav class="navbar">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img alt="Brand" src="{$basePath}/images/wameis_logo.png">
+            <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <img alt="wame_is" src="{$basePath}/images/wameis_logo.png">
                 </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                {position coreLayoutHeader}
             </div>
         </div>
     </nav>
-    {position coreLayoutHeader}
 </header>
 
 {ifset #content}
-    <div> {include #content} </div>
+    {include #content}
 {/ifset}
 
 <footer class="footer">

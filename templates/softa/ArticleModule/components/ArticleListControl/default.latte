@@ -1,0 +1,31 @@
+{position beforeArticleList}
+<h2 class="heading text-center" n:if="$control->getComponentParameter('showTitle')">{$control->getTitle()}</h2>
+
+<p n:if="$control->getComponentParameter('showDescription')">{$control->getDescription()}</p>
+
+{if $listComponents}
+    {if $listContainer}
+        {$listContainer->startTag()|noescape}
+    {/if}
+
+    {foreach $listComponents as $component}
+        {if $listItemContainer}
+            {$listItemContainer->startTag()|noescape}
+        {/if}
+
+        {control $component}
+
+        {if $listItemContainer}
+            {$listItemContainer->endTag()|noescape}
+        {/if}
+        <div n:if="$iterator->getCounter() % 2 == 0" class="clearfix visible-sm"></div>
+        <div n:if="$iterator->getCounter() % 3 == 0" class="clearfix visible-md visible-lg"></div>
+    {/foreach}
+
+    {if $listContainer}
+        {$listContainer->endTag()|noescape}
+    {/if}
+{else}
+    {control noItems}
+{/if}
+{position afterArticleList}
