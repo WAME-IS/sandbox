@@ -10,4 +10,5 @@ webloader:
     css:
         default:
             files:
+                - %appDir%/../private/stylesheets/icons.css
                 - %appDir%/../private/stylesheets/layout.less
