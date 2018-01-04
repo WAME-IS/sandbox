@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d4f9296d737e179807b2fc5933830763",
-    "content-hash": "e86fc0efc9877cdee1ccd063a68ba378",
+    "hash": "90537da7e18f9f69ff6ef213043d49d6",
+    "content-hash": "8d332c23dfd8bdae539509f84b22559d",
     "packages": [
         {
             "name": "beberlei/DoctrineExtensions",
@@ -3481,12 +3481,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "f2edff08395d6d938bede1f3eb578214b90efac6"
+                "reference": "8394c8ef121949e8f858f13bc1e34f05169e4e7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/f2edff08395d6d938bede1f3eb578214b90efac6",
-                "reference": "f2edff08395d6d938bede1f3eb578214b90efac6",
+                "url": "https://api.github.com/repos/symfony/console/zipball/8394c8ef121949e8f858f13bc1e34f05169e4e7d",
+                "reference": "8394c8ef121949e8f858f13bc1e34f05169e4e7d",
                 "shasum": ""
             },
             "require": {
@@ -3542,7 +3542,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-12-20 11:08:06"
+            "time": "2018-01-03 07:37:34"
         },
         {
             "name": "symfony/debug",
@@ -3550,12 +3550,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "93e1e7c901d90c8972474fca0896d1401b166a5c"
+                "reference": "603b95dda8b00020e4e6e60dc906e7b715b1c245"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/93e1e7c901d90c8972474fca0896d1401b166a5c",
-                "reference": "93e1e7c901d90c8972474fca0896d1401b166a5c",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/603b95dda8b00020e4e6e60dc906e7b715b1c245",
+                "reference": "603b95dda8b00020e4e6e60dc906e7b715b1c245",
                 "shasum": ""
             },
             "require": {
@@ -3598,7 +3598,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-12-20 11:08:06"
+            "time": "2018-01-03 17:14:19"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3606,12 +3606,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "45abf96cdc083aebf64c3425ac61b98280525d70"
+                "reference": "d64be24fc1eba62f9daace8a8918f797fc8e87cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/45abf96cdc083aebf64c3425ac61b98280525d70",
-                "reference": "45abf96cdc083aebf64c3425ac61b98280525d70",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/d64be24fc1eba62f9daace8a8918f797fc8e87cc",
+                "reference": "d64be24fc1eba62f9daace8a8918f797fc8e87cc",
                 "shasum": ""
             },
             "require": {
@@ -3658,7 +3658,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2017-12-12 11:12:43"
+            "time": "2018-01-03 07:36:31"
         },
         {
             "name": "symfony/inflector",
@@ -3666,12 +3666,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/inflector.git",
-                "reference": "8b7161c60d9481f8564df09987fe51e7edfadfce"
+                "reference": "217fa0f0e8fce417bd225e4195b12c56e87273a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/inflector/zipball/8b7161c60d9481f8564df09987fe51e7edfadfce",
-                "reference": "8b7161c60d9481f8564df09987fe51e7edfadfce",
+                "url": "https://api.github.com/repos/symfony/inflector/zipball/217fa0f0e8fce417bd225e4195b12c56e87273a8",
+                "reference": "217fa0f0e8fce417bd225e4195b12c56e87273a8",
                 "shasum": ""
             },
             "require": {
@@ -3715,7 +3715,7 @@
                 "symfony",
                 "words"
             ],
-            "time": "2017-08-03 09:34:20"
+            "time": "2018-01-03 17:14:19"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -3841,12 +3841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-access.git",
-                "reference": "4005f3de1c62befe0aea3a272b7379430304a331"
+                "reference": "a6e8c778b220dfd5cd5f5dcb09f87ee232dd608a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-access/zipball/4005f3de1c62befe0aea3a272b7379430304a331",
-                "reference": "4005f3de1c62befe0aea3a272b7379430304a331",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/a6e8c778b220dfd5cd5f5dcb09f87ee232dd608a",
+                "reference": "a6e8c778b220dfd5cd5f5dcb09f87ee232dd608a",
                 "shasum": ""
             },
             "require": {
@@ -3901,7 +3901,7 @@
                 "property path",
                 "reflection"
             ],
-            "time": "2017-11-19 18:41:20"
+            "time": "2018-01-03 07:37:34"
         },
         {
             "name": "symfony/yaml",
@@ -3909,12 +3909,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "afe0cd38486505c9703707707d91450cfc1bd536"
+                "reference": "25c192f25721a74084272671f658797d9e0e0146"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/afe0cd38486505c9703707707d91450cfc1bd536",
-                "reference": "afe0cd38486505c9703707707d91450cfc1bd536",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/25c192f25721a74084272671f658797d9e0e0146",
+                "reference": "25c192f25721a74084272671f658797d9e0e0146",
                 "shasum": ""
             },
             "require": {
@@ -3959,7 +3959,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2017-12-11 20:38:23"
+            "time": "2018-01-03 07:37:34"
         },
         {
             "name": "symnedi/event-dispatcher",
@@ -4320,6 +4320,87 @@
             "time": "2017-12-29 14:36:37"
         },
         {
+            "name": "wame/ArticleCategoryPlugin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WAME-IS/ArticleCategoryPlugin.git",
+                "reference": "b8b81d6765fe96edde0ef77924dc73f231683aac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/ArticleCategoryPlugin/zipball/b8b81d6765fe96edde0ef77924dc73f231683aac",
+                "reference": "b8b81d6765fe96edde0ef77924dc73f231683aac",
+                "shasum": ""
+            },
+            "require": {
+                "wame/articlemodule": ">=0.0.1",
+                "wame/categorymodule": ">=0.0.1",
+                "wame/entitymodifier": ">=0.0.1"
+            },
+            "type": "wame-module",
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Wame",
+                    "homepage": "http://wame.sk"
+                }
+            ],
+            "description": "CMS WAME admin Article Category Bar",
+            "homepage": "http://wame.sk/cms-wame-admin",
+            "support": {
+                "source": "https://github.com/WAME-IS/ArticleCategoryPlugin/tree/master",
+                "issues": "https://github.com/WAME-IS/ArticleCategoryPlugin/issues"
+            },
+            "time": "2017-12-29 14:36:32"
+        },
+        {
+            "name": "wame/ArticleModule",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WAME-IS/ArticleModule.git",
+                "reference": "8ccc9d7308f80c2d9cc7d93c87788cd480e81e50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/ArticleModule/zipball/8ccc9d7308f80c2d9cc7d93c87788cd480e81e50",
+                "reference": "8ccc9d7308f80c2d9cc7d93c87788cd480e81e50",
+                "shasum": ""
+            },
+            "require": {
+                "wame/categorymodule": ">=0.0.1",
+                "wame/core": ">=0.0.1",
+                "wame/dynamicobject": ">=0.0.1",
+                "wame/editorformcontrol": ">=0.0.1",
+                "wame/permissionmodule": ">=0.0.1",
+                "wame/usermodule": ">=0.0.1"
+            },
+            "type": "wame-module",
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "authors": [
+                {
+                    "name": "WAME s.r.o.",
+                    "homepage": "http://wame.sk"
+                }
+            ],
+            "description": "CMS WAME admin",
+            "homepage": "http://wame.sk/cms-wame-admin",
+            "support": {
+                "source": "https://github.com/WAME-IS/ArticleModule/tree/master",
+                "issues": "https://github.com/WAME-IS/ArticleModule/issues"
+            },
+            "time": "2018-01-02 07:29:50"
+        },
+        {
             "name": "wame/AutocompleteFormControl",
             "version": "dev-master",
             "source": {
@@ -4356,6 +4437,46 @@
                 "issues": "https://github.com/WAME-IS/AutocompleteFormControl/issues"
             },
             "time": "2017-12-29 14:36:31"
+        },
+        {
+            "name": "wame/CategoryModule",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WAME-IS/CategoryModule.git",
+                "reference": "cf174251c04ada1b1cea8aa0adf07d0542661e4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/CategoryModule/zipball/cf174251c04ada1b1cea8aa0adf07d0542661e4b",
+                "reference": "cf174251c04ada1b1cea8aa0adf07d0542661e4b",
+                "shasum": ""
+            },
+            "require": {
+                "wame/autocompleteformcontrol": "*",
+                "wame/core": "*",
+                "wame/permissionmodule": "*",
+                "wame/usermodule": "*"
+            },
+            "type": "wame-module",
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Wame",
+                    "homepage": "http://wame.sk"
+                }
+            ],
+            "description": "CMS WAME admin",
+            "homepage": "http://wame.sk/cms-wame-admin",
+            "support": {
+                "source": "https://github.com/WAME-IS/CategoryModule/tree/master",
+                "issues": "https://github.com/WAME-IS/CategoryModule/issues"
+            },
+            "time": "2017-12-29 14:36:36"
         },
         {
             "name": "wame/ChameleonComponents",
@@ -4697,6 +4818,80 @@
                 "issues": "https://github.com/WAME-IS/DynamicObject/issues"
             },
             "time": "2017-12-29 14:36:36"
+        },
+        {
+            "name": "wame/EditorFormControl",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WAME-IS/EditorFormControl.git",
+                "reference": "07d3e2b0be4c2c2a1cb6623b4f9dabdce874c988"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/EditorFormControl/zipball/07d3e2b0be4c2c2a1cb6623b4f9dabdce874c988",
+                "reference": "07d3e2b0be4c2c2a1cb6623b4f9dabdce874c988",
+                "shasum": ""
+            },
+            "require": {
+                "wame/core": "*"
+            },
+            "type": "wame-module",
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Wame",
+                    "homepage": "http://wame.sk"
+                }
+            ],
+            "description": "CMS WAME admin",
+            "homepage": "http://wame.sk/cms-wame-admin",
+            "support": {
+                "source": "https://github.com/WAME-IS/EditorFormControl/tree/master",
+                "issues": "https://github.com/WAME-IS/EditorFormControl/issues"
+            },
+            "time": "2017-12-29 14:36:34"
+        },
+        {
+            "name": "wame/EntityModifier",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WAME-IS/EntityModifier.git",
+                "reference": "1e2776d6d8eda8e3c3e60461b0ad8956305f12f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/EntityModifier/zipball/1e2776d6d8eda8e3c3e60461b0ad8956305f12f6",
+                "reference": "1e2776d6d8eda8e3c3e60461b0ad8956305f12f6",
+                "shasum": ""
+            },
+            "require": {
+                "wame/core": "*"
+            },
+            "type": "wame-module",
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Wame",
+                    "homepage": "http://wame.sk"
+                }
+            ],
+            "description": "CMS WAME admin",
+            "homepage": "http://wame.sk/cms-wame-admin",
+            "support": {
+                "source": "https://github.com/WAME-IS/EntityModifier/tree/master",
+                "issues": "https://github.com/WAME-IS/EntityModifier/issues"
+            },
+            "time": "2017-12-29 14:36:35"
         },
         {
             "name": "wame/GeneralSettingsPlugin",
@@ -5150,6 +5345,44 @@
             "support": {
                 "source": "https://github.com/WAME-IS/SettingsModule/tree/master",
                 "issues": "https://github.com/WAME-IS/SettingsModule/issues"
+            },
+            "time": "2017-12-29 14:36:35"
+        },
+        {
+            "name": "wame/TextBlockModule",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WAME-IS/TextBlockModule.git",
+                "reference": "7d8ef4ea15a8026ffe85a134da2ed0a54c62104e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WAME-IS/TextBlockModule/zipball/7d8ef4ea15a8026ffe85a134da2ed0a54c62104e",
+                "reference": "7d8ef4ea15a8026ffe85a134da2ed0a54c62104e",
+                "shasum": ""
+            },
+            "require": {
+                "wame/componentmodule": ">=0.0.1",
+                "wame/editorformcontrol": ">=0.0.1"
+            },
+            "type": "wame-module",
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "authors": [
+                {
+                    "name": "WAME s.r.o.",
+                    "homepage": "http://wame.sk"
+                }
+            ],
+            "description": "CMS WAME admin",
+            "homepage": "http://wame.sk/cms-wame-admin",
+            "support": {
+                "source": "https://github.com/WAME-IS/TextBlockModule/tree/master",
+                "issues": "https://github.com/WAME-IS/TextBlockModule/issues"
             },
             "time": "2017-12-29 14:36:35"
         },
