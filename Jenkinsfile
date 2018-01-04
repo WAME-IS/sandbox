@@ -5,6 +5,6 @@ node {
     }
     stage("composer_install") {
         // Run `composer install` as a shell script
-        sh 'composer install'
+        sh 'docker run --rm -v $(pwd):/app composer/composer install'
     }
 }
