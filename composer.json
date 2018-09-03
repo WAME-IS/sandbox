@@ -10,8 +10,9 @@
       "homepage": "https://wame.sk"
     }
   ],
+  "config": { "secure-http": false },
   "repositories": [
-    { "type": "composer", "url": "https://packages.wameis.org" },
+    { "type": "composer", "url": "http://packages.wameis.org" },
     { "type": "vcs", "url": "https://github.com/wamesro/forms" },
     { "type": "vcs", "url": "https://github.com/wamesro/gettext-latte" },
     { "type": "vcs", "url": "https://github.com/matej21/nette-identity-doctrine" }
